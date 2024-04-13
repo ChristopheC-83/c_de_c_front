@@ -72,5 +72,3 @@
     <p>
       En MySQL, elles seront plusierus afin de découper les responsabilités.
     </p>
-  </body>
-</html>
