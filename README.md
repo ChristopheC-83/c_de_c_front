@@ -70,5 +70,5 @@
 <br />
 <h2><u>Les bases de données</u></h2>
 <p>
-    En MySQL, elles seront plusierus afin de découper les responsabilités.
+    En MySQL, elles seront plusieurs afin de découper les responsabilités.
 </p>
