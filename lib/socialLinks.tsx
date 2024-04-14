@@ -1,8 +1,9 @@
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
-import { RiTwitterXLine } from "react-icons/ri";
-import { SocialLinksType } from "@/helpers/customTypes";import { FaCodepen } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";import { IoLogoCodepen } from "react-icons/io";
 
+import { SocialLinksType } from "@/helpers/customTypes";
+import { FaCodepen } from "react-icons/fa6";
 
 export const socialLinks: SocialLinksType[] = [
   {
@@ -13,7 +14,7 @@ export const socialLinks: SocialLinksType[] = [
   },
   {
     id: 2,
-    label: "Linkedin",
+    label: "LinkedIn",
     href: "https://www.linkedin.com/in/christophe-chiappetta-b3623b262/",
     icon: <SiLinkedin />,
   },
@@ -27,6 +28,6 @@ export const socialLinks: SocialLinksType[] = [
     id: 4,
     label: "CodePen",
     href: "https://codepen.io/ChristopheC-83",
-    icon: <FaCodepen />,
+    icon: <IoLogoCodepen />,
   },
 ];
