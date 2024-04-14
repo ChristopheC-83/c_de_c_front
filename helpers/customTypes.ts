@@ -4,6 +4,7 @@ export type SocialLinksType ={
     id: number,
     icon: JSX.Element,
     label: string,
-    href: string
+    href: string,
+    toolTipText?: string
   }
 

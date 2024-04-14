@@ -6,7 +6,7 @@ export default function ComputerLinks() {
     <div className="flex items-center gap-x-5">
       {navLinks.map((link) => (
         <Link key={link.id} href={link.href}>
-          <p>{link.label}</p>
+          <h4 className="hover:opacity-80">{link.label}</h4>
         </Link>
       ))}
     </div>
