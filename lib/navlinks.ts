@@ -14,7 +14,7 @@ export const navLinks: NavlinksType[] = [
   {
     id: 3,
     href: "/share",
-    label: "partage",
+    label: "partages",
   },
   {
     id: 4,
