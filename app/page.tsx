@@ -9,6 +9,7 @@ export default function Home() {
       <h1>Coucou</h1>
       <Button variant="success">Click me</Button>
       <Eye size={32} />
+      <p>Coucou, effectivement, je vais bien !</p>
       
       </main>
   );

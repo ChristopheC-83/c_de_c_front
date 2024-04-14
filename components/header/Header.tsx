@@ -1,17 +1,11 @@
 
+export default function Header() {
+  
+  return (
+    <header>
+        <div className="container flex">
 
-
- export default function Header() {
-
-
-
-return (
-    <div>
-header
-
-
-    </div>
-
+        </div>
+    </header>
   );
-
 }
