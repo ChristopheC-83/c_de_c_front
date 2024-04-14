@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import "@/app/style/global.css"
+import "@/app/style/global.css";
 import "@/app/style/style.css";
-
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "CdeC | Accueil",
-  description: "Code avec moi pour mettre en pratique ton apprentissage des outils du développement web. ",
+  description:
+    "Code avec moi pour mettre en pratique ton apprentissage des outils du développement web. ",
 };
 
 export default function RootLayout({
@@ -15,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className="">{children}</body>
+      <body className="w-full min-h-screen flex flex-col">
+        <Header />
+        <div className="flex-1">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
