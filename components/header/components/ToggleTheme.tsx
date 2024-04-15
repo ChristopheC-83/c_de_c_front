@@ -10,7 +10,7 @@ export default function ToggleTheme() {
   }
 
   return (
-    <Button variant="link" onClick={toggleTheme} className="text-foreground">
+    <Button variant="link" onClick={toggleTheme} className="text-foreground hover:text-muted-foreground">
       <h3 className="scale-100 dark:scale-0 duration-300">
         <Moon />
       </h3>
