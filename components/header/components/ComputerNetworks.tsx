@@ -13,7 +13,7 @@ import { ImMail4 } from "react-icons/im";
 import { toast } from "sonner";
 import { RiLoginCircleFill } from "react-icons/ri";
 import { Moon, Sun } from "lucide-react";
-import { Button } from "@/components/shadcn/button";
+import ToggleTheme from "./ToggleTheme";
 
 export default function ComputerNetworks() {
   function copyEmail() {
@@ -21,7 +21,6 @@ export default function ComputerNetworks() {
     toast.success("Adresse email copiée dans le presse-papier");
   }
 
-  function toggleTheme() {}
 
   return (
     <div className="flex items-center gap-x-5">
@@ -29,14 +28,7 @@ export default function ComputerNetworks() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant="link" onClick={toggleTheme}>
-              <h3 className="scale-100 dark:scale-0 duration-200">
-                <Moon />
-              </h3>
-              <h3 className="scale-0 dark:scale-100 duration-200">
-                <Sun />
-              </h3>
-            </Button>
+            <ToggleTheme />
           </TooltipTrigger>
           <TooltipContent>
             <p className="text-sm">Changez le thème de l'application.</p>
@@ -53,8 +45,8 @@ export default function ComputerNetworks() {
                 <h3>{link.icon}</h3>
               </Link>
             </TooltipTrigger>
-            <TooltipContent>
-              <p className="text-sm">
+            <TooltipContent className="bg-popover-foreground">
+              <p className="text-sm text-popover ">
                 {link.toolTipText ? link.toolTipText : link.label}
               </p>
             </TooltipContent>

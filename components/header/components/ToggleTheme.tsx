@@ -1,17 +1,22 @@
 
+import { Button } from "@/components/shadcn/button";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
+export default function ToggleTheme() {
+  const { theme, setTheme } = useTheme();
+  function toggleTheme() {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }
 
- export default function ToggleTheme() {
-
-
-
-return (
-    <div>
-
-    
-
-    </div>
-
+  return (
+    <Button variant="link" onClick={toggleTheme} className="text-foreground">
+      <h3 className="scale-100 dark:scale-0 duration-300">
+        <Moon />
+      </h3>
+      <h3 className="scale-0 dark:scale-100 duration-300">
+        <Sun />
+      </h3>
+    </Button>
   );
-
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import { Sheet, SheetContent, SheetTrigger } from "@/components/shadcn/sheet";
 import { Menu } from "lucide-react";
 import { navLinks } from "@/lib/navlinks";
@@ -5,6 +7,7 @@ import { navLinks } from "@/lib/navlinks";
 import Link from "next/link";
 import { socialLinks } from "@/lib/socialLinks";
 import { ImMail4 } from "react-icons/im";
+import ToggleTheme from "./ToggleTheme";
 
 export default function MenuSmartphone() {
   return (
@@ -18,6 +21,7 @@ export default function MenuSmartphone() {
       </SheetTrigger>
       <SheetContent>
         <div className="flex flex-col my-12 gap-y-6">
+        <div className="flex w-full justify-end mx-4"><ToggleTheme/></div>
           {navLinks.map((link) => (
             <Link key={link.id} href={link.href}>
               <h4 className="hover:opacity-80 text-end">{link.label}</h4>
