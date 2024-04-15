@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className="w-full min-h-screen flex flex-col bg-background text-foreground">
+      <body className="w-full min-h-screen flex flex-col bg-background ">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           <Toaster position="top-center" richColors expand={true} />
