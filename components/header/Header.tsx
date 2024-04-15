@@ -10,7 +10,7 @@ export default function Header() {
         <MenuSmartphone />
       </div>
       {/* Menu si écran > 640px de large */}
-      <div className="container sm:flex justify-around p-6 hidden ">
+      <div className="container sm:flex justify-between p-6 hidden ">
         <ComputerLinks />
         <ComputerNetworks />
       </div>

@@ -10,8 +10,10 @@ import {
 import { socialLinks } from "@/lib/socialLinks";
 import Link from "next/link";
 import { ImMail4 } from "react-icons/im";
-import { toast } from "sonner";import { RiLoginCircleFill } from "react-icons/ri";
-
+import { toast } from "sonner";
+import { RiLoginCircleFill } from "react-icons/ri";
+import { Moon, Sun } from "lucide-react";
+import { Button } from "@/components/shadcn/button";
 
 export default function ComputerNetworks() {
   function copyEmail() {
@@ -19,8 +21,29 @@ export default function ComputerNetworks() {
     toast.success("Adresse email copiée dans le presse-papier");
   }
 
+  function toggleTheme() {}
+
   return (
     <div className="flex items-center gap-x-5">
+      {/* ToggleTheme */}
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant="link" onClick={toggleTheme}>
+              <h3 className="scale-100 dark:scale-0 duration-200">
+                <Moon />
+              </h3>
+              <h3 className="scale-0 dark:scale-100 duration-200">
+                <Sun />
+              </h3>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-sm">Changez le thème de l'application.</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+
       {/* Les réseaux sociaux */}
       {socialLinks.map((link) => (
         <TooltipProvider key={link.id}>

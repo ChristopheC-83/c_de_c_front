@@ -20,7 +20,7 @@ export default function MenuSmartphone() {
         <div className="flex flex-col my-12 gap-y-6">
           {navLinks.map((link) => (
             <Link key={link.id} href={link.href}>
-              <h3 className="hover:opacity-80 text-end">{link.label}</h3>
+              <h4 className="hover:opacity-80 text-end">{link.label}</h4>
             </Link>
           ))}
         </div>
