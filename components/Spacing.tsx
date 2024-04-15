@@ -1,9 +1,9 @@
 export default function Spacing() {
     return <div className="
-    h-8
-    sm:h-12
-    md:h-16
-    lg:h-20
-    xl:h-24
+    h-6
+    sm:h-8
+    md:h-12
+    lg:h-16
+    xl:h-20
     "></div>;
   }

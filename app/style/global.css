@@ -61,9 +61,9 @@
   * {
     @apply border-border;
   }
-  /* body {
+  body {
     @apply bg-background text-foreground;
-  } */
+  }
 }
 
 .container {
@@ -76,5 +76,5 @@
 }
 
 .clip{
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-600;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-500;
 }
