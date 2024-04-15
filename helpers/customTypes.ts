@@ -7,3 +7,10 @@ export type SocialLinksType = {
   href: string;
   toolTipText?: string;
 };
+export type SkillsListType = {
+  id: number;
+  icon: JSX.Element;
+  label: string;
+  text: string;
+  
+};

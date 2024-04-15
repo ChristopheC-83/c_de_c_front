@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import AvatarPerso from "@/components/Avatar/AvatarPerso";
 import Image from "next/image";
-import AvatarPerso from "../Avatar/AvatarPerso";
 
 
 export default function Hero() {
