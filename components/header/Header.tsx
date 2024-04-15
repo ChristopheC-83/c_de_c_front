@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header>
       {/* Menu si écran < 640px de klarge */}
-      <div className="container flex justify-end px-6 py-2 sm:hidden  hover:text-muted-foreground">
+      <div className="container flex justify-end px-6 py-2 sm:hidden  hover:text-primary">
         <MenuSmartphone />
       </div>
       {/* Menu si écran > 640px de large */}

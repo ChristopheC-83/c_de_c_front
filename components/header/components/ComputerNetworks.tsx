@@ -42,10 +42,10 @@ export default function ComputerNetworks() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link href={link.href}>
-                <h3 className=" hover:text-muted-foreground">{link.icon}</h3>
+                <h3 className=" hover:text-primary">{link.icon}</h3>
               </Link>
             </TooltipTrigger>
-            <TooltipContent className="bg-popover-foreground">
+            <TooltipContent className="bg-primary">
               <p className="text-sm text-popover ">
                 {link.toolTipText ? link.toolTipText : link.label}
               </p>
@@ -59,7 +59,7 @@ export default function ComputerNetworks() {
         <Tooltip>
           <TooltipTrigger asChild>
             <a href="mailto:christophe.chiapetta@gmail.com" onClick={copyEmail}>
-              <h3 className=" hover:text-muted-foreground">
+              <h3 className=" hover:text-primary">
                 <ImMail4 />
               </h3>
             </a>

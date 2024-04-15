@@ -1,15 +1,14 @@
-import { Button } from "@/components/shadcn/button";
-import { Eye } from "lucide-react";
-import Image from "next/image";
+import Spacing from "@/components/Spacing";
+import Hero from "@/components/hero/Hero";
+import Title from "@/components/title/Title";
 
 export default function Home() {
   return (
-    <main>
-      
-      <h1>Coucou</h1>
-      <Button variant="success">Click me</Button>
-      <Eye size={32} />
-      <p>Coucou, effectivement, je vais bien !</p>
+    <main className="p-1 xs:p-2 sm:p-3 md:p-4">
+      <Spacing />
+      <Title />
+      <Spacing />
+      <Hero/>
       
       </main>
   );
