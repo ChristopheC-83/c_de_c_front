@@ -8,7 +8,7 @@ export const skillsList: SkillsListType[] = [
   {
     id: 1,
     icon: <FaReact/>,
-    label: "NextJS / React",
+    label: "React / NextJS",
     text: "Pour des sites évolutifs, modulables et réactifs. Next apporte en plus une optimisation de votre classement dans les moteurs de recherche.",
   },
   {
@@ -21,7 +21,7 @@ export const skillsList: SkillsListType[] = [
     id: 3,
     icon: <FaPhp/>,
     label: "PHP",
-    text: "Vieux, certes, mais toujours d'actualité pour des sites dynamiques et sécurisés.",
+    text: "Vieux, certes, mais toujours d'actualité pour des sites dynamiques et sécurisés. PHP permet une administration complète des données de votre site.",
   },
 ];
  

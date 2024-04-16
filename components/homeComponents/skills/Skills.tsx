@@ -4,11 +4,13 @@ import SkillCard from "./components/SkillCard";
 export default function Skills() {
   return (
     <div className="container">
-      <h2 className="text-center clip my-8">Compétences</h2>
+      <h2 className="text-center clip mb-8">Compétences</h2>
 
-      {skillsList.map((skill) => (
-        <SkillCard key={skill.id} skill={skill} />
-      ))}
+      <div className="flex flex-col sm:flex-row flex-wrap gap-8">
+        {skillsList.map((skill) => (
+          <SkillCard key={skill.id} skill={skill} />
+        ))}
+      </div>
     </div>
   );
 }
