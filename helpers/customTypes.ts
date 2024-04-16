@@ -14,3 +14,16 @@ export type SkillsListType = {
   text: string;
   
 };
+export type PortfolioType = {
+  id:number;
+  title: string;
+  imageDestop: string;
+  imageMobile: string;
+  description: string;
+  link: string;
+  githubFront: string;
+  githubBack: string;
+  technos: { id: number; icon: JSX.Element; label: string }[];
+  more: string;
+  
+}
