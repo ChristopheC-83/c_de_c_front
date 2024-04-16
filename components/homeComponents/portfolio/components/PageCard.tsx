@@ -43,21 +43,21 @@ export default function PageCard({ page }: PageCardProps) {
       </Link>
 
       <div className="flex-1 flex flex-col justify-between p-2 sm:p-3 md:p-4">
-        <h2 className="text-center">{page.title}</h2>
+        <h2 className="text-center text-primary">{page.title}</h2>
         <div>
-          <h4 className="my-6">
+          <h4 className="my-6 text-primary">
             <u>Description : </u>
           </h4>
           <p>{page.description}</p>
         </div>
         <div>
-          <h4 className="my-6">
+          <h4 className="my-6 text-primary">
             <u>Ce que j'ai pu approfondir : </u>
           </h4>
           <p>{page.more}</p>
         </div>
         <div className="">
-          <h4 className="my-6">
+          <h4 className="my-6 text-primary">
             <u>Les technos utilisées : </u>
           </h4>
           <div className="flex gap-5 flex-wrap w-full">
@@ -65,7 +65,7 @@ export default function PageCard({ page }: PageCardProps) {
               <TooltipProvider key={techno.id}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="flex  text-3xl text-ring hover:text-accent  hover:scale-110 duration-200">
+                    <div className="flex  text-3xl text-foreground hover:text-primary  hover:scale-110 duration-200">
                       {techno.icon}
                     </div>
                   </TooltipTrigger>
