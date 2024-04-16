@@ -3,7 +3,7 @@ import SkillCard from "./components/SkillCard";
 
 export default function Skills() {
   return (
-    <div className="container">
+    <div className="container ">
       <h2 className="text-center clip mb-8">Compétences</h2>
 
       <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-between">
