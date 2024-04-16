@@ -24,6 +24,6 @@ export type PortfolioType = {
   githubFront: string;
   githubBack: string;
   technos: { id: number; icon: JSX.Element; label: string }[];
-  more: string;
+  more: JSX.Element;
   
 }

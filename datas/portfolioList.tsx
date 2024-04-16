@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-key */
 import { PortfolioType } from "@/helpers/customTypes";
 import { FaHtml5 } from "react-icons/fa6";
@@ -9,9 +10,9 @@ import { SiPrisma } from "react-icons/si";
 import { SiFramer } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
 import { SiSass } from "react-icons/si";
-import { SiReact } from "react-icons/si";import { SiGreensock } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { SiGreensock } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-
 
 export const portfolioList: PortfolioType[] = [
   {
@@ -19,8 +20,7 @@ export const portfolioList: PortfolioType[] = [
     title: "Vélo Expresso",
     imageDestop: "/images/portfolio/portrait_velo_expresso-min.png",
     imageMobile: "/images/portfolio/paysage_velo_expresso-min.png",
-    description:
-      "Site vitrine pour une entreprise de location de vélos électriques.",
+    description: "Site vitrine administrable pour un magasin de vélos.",
     link: "https://velo-expresso-front.vercel.app/",
     githubFront: "",
     githubBack: "",
@@ -36,7 +36,19 @@ export const portfolioList: PortfolioType[] = [
       { id: 9, icon: <FaCss3Alt />, label: "css" },
       { id: 10, icon: <FaHtml5 />, label: "html" },
     ],
-    more: "Ce projet part d'une idée de site vitrine, réactif lors de la navigation. NextJS s'est imposé évidemment. Mais dès le début de la réflexion, nous nous sommes rendu compte que le propriétaire du magasin aurait besoin d'un outil d'administration pour les vélos, tarifs, prestations... Nous avons donc décidé de faire un second site en php pour la gestion des données. J'en ai profité pour mettre en place tout ce que j'avais pu apprendre juqu'à présent. Prisma pour la gestion de la base de données, framer motion pour les animations, bootstrap pour le design. Un projet complet et très formateur.",
+    more: (
+      <>
+        Un double projet. <br />
+        Une partie visible par les clients. Codée en <b>Next.js</b>, nous avons misé
+        sur la réactivité et la possibilité d'améliorer le <b>référencement</b> du site
+        sur les moteurs de recherche. <br />
+        La seconde partie, en <b>php sur une architecture MVC</b>, permet à
+        l'administrateur de gérer le contenu : les prestations, les prix, l'ordre
+        d'apparition... <br />
+        Un <b>projet complet</b> qui m'a permis de travailler sur beaucoup de facettes
+        du développement web.
+      </>
+    ),
   },
   {
     id: 2,
@@ -47,21 +59,36 @@ export const portfolioList: PortfolioType[] = [
     link: "https://christophe-cuisine.fr/",
     githubFront: "",
     githubBack: "",
-    technos:  [
+    technos: [
       { id: 1, icon: <SiReact />, label: "react" },
       { id: 2, icon: <SiGreensock />, label: "greensock" },
       { id: 3, icon: <SiSass />, label: "sass" },
       { id: 4, icon: <FaCss3Alt />, label: "css" },
       { id: 5, icon: <FaHtml5 />, label: "html" },
     ],
-    more: "Ce projet est un site vitrine pour un artisan.Pour moi même en fait 😅 !  Je passe de la conception de cuisisnes à la conception de site et outils web. Développé en React et statique, l'idée était d'être simple et sobre dans la réalisation pour un lisibilité maximale. Ce n'était pas prévu, mais cette production m'a ramené plus de clients que nécessaire !",
+    more: (
+      <>
+        Ce projet est un site vitrine pour un artisan. Moi même en fait 😅 !
+        <br />
+        Je passe de la pose de cuisines à la conception de sites et d' outils
+        web.
+        <br />
+        Développé en <b>React</b> et avec des données statiques dans une <b>API Context</b>,
+        l'idée était d'être simple et sobre dans la réalisation pour un
+        lisibilité maximale. <br />
+        De légères <b>animations avec GSAP</b> pour une navigation plus agréable.<br/>
+        Ce n'était pas prévu, mais cette production m'a ramené plus de clients
+        que nécessaire !
+      </>
+    ),
   },
   {
     id: 3,
     title: "un blog",
     imageDestop: "/images/portfolio/portrait_blog-min.png",
     imageMobile: "/images/portfolio/paysage_blog-min.png",
-    description: "Un blog pour partager mes expériences et mes projets.",
+    description:
+      "Un blog pour partager mes expériences, mes projets et mes idées.",
     link: "https://blog.barpat.fun/",
     githubFront: "",
     githubBack: "",
@@ -73,7 +100,24 @@ export const portfolioList: PortfolioType[] = [
       { id: 5, icon: <FaCss3Alt />, label: "css" },
       { id: 6, icon: <FaHtml5 />, label: "html" },
     ],
-    more: "Dans le cadre d'une formation, nous devions exploiter php et une architecture MVC. J'ai donc décidé de créer un blog pour partager mes expériences et mes projets. J'ai utilisé bootstrap pour le design et php pour la gestion des données. Les articles sont stockés dans une base de données MySQL. L'administrateur a accés à un tableau de bord pour la gestion des articles, des utilisateurs. Il peut écrire, modifier, supprimer les articles. Il peut aussi gérer les utilisateurs, les rôles, les droits. Un projet complet pour une formation complète.",
+    more: (
+      <>
+        Dans le cadre d'une formation, nous devions exploiter{" "}
+        <b>php et une architecture MVC</b>.<br />
+        J'ai donc décidé de créer un blog pour partager mes expériences et mes
+        projets. <br />
+        J'ai utilisé <b>bootstrap</b> pour le design et <b>php</b> pour la gestion des
+        données.
+        <br /> Les articles sont stockés dans une <b>base de données MySQL</b>.
+        <br /> L'administrateur a accés à un tableau de bord pour la gestion des
+        articles, des utilisateurs. Il peut écrire, modifier, supprimer les
+        articles (le célèbre <b>CRUD</b>). Il peut aussi gérer les utilisateurs, les rôles, les droits.<br/>
+        Un projet complet pour une formation complète autour de la <b>
+          gestion des
+          données
+        </b>.
+      </>
+    ),
   },
   {
     id: 4,
@@ -91,6 +135,19 @@ export const portfolioList: PortfolioType[] = [
       { id: 4, icon: <FaCss3Alt />, label: "css" },
       { id: 5, icon: <FaHtml5 />, label: "html" },
     ],
-    more: "Parce que c'est à travers des projets perso qu'on apprend le plus lors de notre formation, j'ai réalisé un site de présentation. Pas un CV des plus sérieux, mais un site qui me ressemble. J'ai utilisé React pour la dynamique et sass pour le design. J'ai aussi utilisé des animations pour rendre le site plus vivant. La librairie GSAP est vraiment complète pour ce genre de projet. Pour finir, l'API de contexte de React m'a permis de gérer l'état global du site.",
+    more: (
+      <>
+        {" "}
+        Parce que c'est à travers des projets perso qu'on apprend le plus lors
+        de notre formation, j'ai réalisé un site de présentation pour m'exercer
+        à la manimulation de <b>React</b>.<br />
+        Pas un CV des plus sérieux, mais un site qui me ressemble.<br/>J'ai utilisé
+        ce <b>framework</b> pour le dynamisme et <b>SASS</b> pour le design.
+        <br /> 
+        La <b>librairie GSAP</b> est vraiment complète animer un projet web.
+        <br /> Pour finir, l'<b>API de contexte</b> de React m'a permis de gérer
+        l'état global du site.
+      </>
+    ),
   },
 ];

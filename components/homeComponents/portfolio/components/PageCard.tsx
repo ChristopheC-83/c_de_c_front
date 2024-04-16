@@ -45,19 +45,19 @@ export default function PageCard({ page }: PageCardProps) {
       <div className="flex-1 flex flex-col justify-between p-2 sm:p-3 md:p-4">
         <h2 className="text-center">{page.title}</h2>
         <div>
-          <h4 className="mb-3">
+          <h4 className="my-6">
             <u>Description : </u>
           </h4>
           <p>{page.description}</p>
         </div>
         <div>
-          <h4 className="mb-3">
+          <h4 className="my-6">
             <u>Ce que j'ai pu approfondir : </u>
           </h4>
           <p>{page.more}</p>
         </div>
-        <div className="mb-6">
-          <h4 className="mb-3">
+        <div className="">
+          <h4 className="my-6">
             <u>Les technos utilisées : </u>
           </h4>
           <div className="flex gap-5 flex-wrap w-full">
@@ -70,7 +70,7 @@ export default function PageCard({ page }: PageCardProps) {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p className="text-sm">
+                    <p className="text-sm ">
                       {techno.label}
                     </p>
                   </TooltipContent>
