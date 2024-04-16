@@ -41,8 +41,8 @@ export const portfolioList: PortfolioType[] = [
   {
     id: 2,
     title: "Un poseur de cuisines",
-    imageDestop: "/images/portfolio/portrait_cuisine-min.png",
-    imageMobile: "/images/portfolio/paysage_cuisine-min.png",
+    imageDestop: "/images/portfolio/portrait_cuisines-min.png",
+    imageMobile: "/images/portfolio/paysage_cuisines-min.png",
     description: "Site vitrine pour un artisan poseur de cuisines.",
     link: "https://christophe-cuisine.fr/",
     githubFront: "",
