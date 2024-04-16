@@ -15,7 +15,7 @@ type PageCardProps = {
 
 export default function PageCard({ page }: PageCardProps) {
   return (
-    <div className="flex flex-col lg:flex-row w-full h-fit justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3  lg:px-1">
+    <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3  lg:px-1">
       {/* image pour mobile */}
       <Link
         href={page.link}
@@ -65,7 +65,7 @@ export default function PageCard({ page }: PageCardProps) {
               <TooltipProvider key={techno.id}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="flex  text-3xl text-ring hover:text-muted-foreground">
+                    <div className="flex  text-3xl text-ring hover:text-accent  hover:scale-110 duration-200">
                       {techno.icon}
                     </div>
                   </TooltipTrigger>

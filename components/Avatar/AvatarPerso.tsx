@@ -9,7 +9,7 @@ export default function AvatarPerso() {
         alt="christophe c."
         width={250}
         height={250}
-        className="rounded-full object-contain border-2 border-ring bg-gradient-to-tr from-blue-400 to-violet-500 shadow"
+        className="rounded-full object-contain border-2 border-ring bg-gradient-to-bl from-teal-400 to-indigo-300 shadow"
       />
     </div>
   );
