@@ -17,8 +17,8 @@ export const portfolioList: PortfolioType[] = [
   {
     id: 1,
     title: "Vélo Expresso",
-    imageDestop: "/images/veloexpresso-desktop.png",
-    imageMobile: "/images/veloexpresso-mobile.png",
+    imageDestop: "/images/portfolio/portrait_velo_expresso-min.png",
+    imageMobile: "/images/portfolio/paysage_velo_expresso-min.png",
     description:
       "Site vitrine pour une entreprise de location de vélos électriques.",
     link: "https://velo-expresso-front.vercel.app/",
@@ -41,8 +41,8 @@ export const portfolioList: PortfolioType[] = [
   {
     id: 2,
     title: "Un poseur de cuisines",
-    imageDestop: "/images/cuisine-desktop.png",
-    imageMobile: "/images/cuisine-mobile.png",
+    imageDestop: "/images/portfolio/portrait_cuisine-min.png",
+    imageMobile: "/images/portfolio/paysage_cuisine-min.png",
     description: "Site vitrine pour un artisan poseur de cuisines.",
     link: "https://christophe-cuisine.fr/",
     githubFront: "",
@@ -59,8 +59,8 @@ export const portfolioList: PortfolioType[] = [
   {
     id: 3,
     title: "un blog",
-    imageDestop: "/images/blog-desktop.png",
-    imageMobile: "/images/blog-mobile.png",
+    imageDestop: "/images/portfolio/portrait_blog-min.png",
+    imageMobile: "/images/portfolio/paysage_blog-min.png",
     description: "Un blog pour partager mes expériences et mes projets.",
     link: "https://blog.barpat.fun/",
     githubFront: "",
@@ -78,8 +78,8 @@ export const portfolioList: PortfolioType[] = [
   {
     id: 4,
     title: "Mon CV en ligne",
-    imageDestop: "/images/cv-desktop.png",
-    imageMobile: "/images/cv-mobile.png",
+    imageDestop: "/images/portfolio/portrait_barpat-min.png",
+    imageMobile: "/images/portfolio/paysage_barpat-min.png",
     description: "Mon CV en ligne, pour m'amuser avec React.",
     link: "https://barpat.fun/",
     githubFront: "",
