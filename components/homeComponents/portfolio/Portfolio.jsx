@@ -27,8 +27,8 @@ export default function Portfolio() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious variant="arrow"/>
+        <CarouselNext variant="arrow"/>
       </Carousel>
     </div>
   );
