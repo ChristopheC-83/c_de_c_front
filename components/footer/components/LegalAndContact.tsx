@@ -15,7 +15,7 @@ export default function LegalAndContact() {
       <h5 className="mt-12">
         2024 &copy; Christophe Chiappetta - Tous droits réservés
       </h5>
-      <Link href="/">
+      <Link href="/cgu">
         {" "}
         <h5>Mentions Légales</h5>
       </Link>
