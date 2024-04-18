@@ -14,7 +14,7 @@ export default function Hero() {
           Je suis à la recherche de la meilleure solution aux problématiques
           rencontrées en embrassant avec enthousiasme de nouvelles technos !
         </p>
-        <p className="text-center">&</p>
+        <p className="text-center text-2xl">&</p>
         <p>
           J'essaye d'apporter ma petite pierre dans le parcours des étudiants en
           tant que <span className="clip">Compagnon de Code</span>.

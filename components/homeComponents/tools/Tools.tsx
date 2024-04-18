@@ -16,7 +16,7 @@ export default function Tools() {
       <Carousel
         className="w-full "
         opts={{
-          // align: "start",
+          align: "start",
           loop: true,
         }}
       >
