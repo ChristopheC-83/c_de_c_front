@@ -1,5 +1,5 @@
 import { stepsList } from "@/datas/stepsList";
-import TechnoCard from "./TechnosCard";
+
 import {
   Accordion,
   AccordionContent,
@@ -12,11 +12,6 @@ export default function Steps() {
     <div className="container ">
       <h2 className="text-center clip mb-8">Déroulé et fonctionnement.</h2>
 
-      {/* <div className="flex flex-col lg:flex-row gap-8 justify-between">
-        {stepsList.map((step) => (
-          <TechnoCard key={step.id} techno={step} />
-        ))}
-      </div> */}
       <Accordion
         type="single"
         collapsible

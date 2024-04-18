@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Technos from "./components/Technos";
 import Prices from "./components/Prices";
 import Steps from "./components/Steps";
+import Waranty from "./components/Waranty";
 
 export default function Services() {
   return (
@@ -19,6 +20,7 @@ export default function Services() {
       <Spacing />
       <Prices/>
       <Spacing />
+      <Waranty/>
 
     </main>
   );

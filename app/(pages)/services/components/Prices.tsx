@@ -9,7 +9,7 @@ import PricesCard from "./PricesCard";
 
 return (
     <div className="container ">
-    <h2 className="text-center clip mb-8">Tarification</h2>
+    <h2 className="text-center clip mb-8">Tarification ajustée et ajustable !</h2>
 
     <div className="flex flex-col lg:flex-row gap-8 justify-between">
       {priceList.map((price) => (

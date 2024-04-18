@@ -11,7 +11,10 @@ export default function PricesCard({ price }: PricesCardProps) {
 
       <p>{price.text}</p>
 
-      <h3 className="clip text-center my-8">{price.price}</h3>
+      <div>
+        <h3 className="clip text-center mt-8">{price.price}</h3>
+        <h4 className="clip text-center mb-8">{price.price2}</h4>
+      </div>
     </div>
   );
 }

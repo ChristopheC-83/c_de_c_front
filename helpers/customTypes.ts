@@ -17,7 +17,7 @@ export type SkillsListType = {
 };
 export type StepsListType = {
   id: number;
-  icon: JSX.Element;
+  icon?: JSX.Element;
   label: string;
   text: JSX.Element;
 };
@@ -46,6 +46,7 @@ export type ToolsType = {
 export type PriceListType = {
   id: number;
   price: string;
+  price2?: string;
   label: string;
   text: JSX.Element;
 };
