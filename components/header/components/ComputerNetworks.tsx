@@ -21,20 +21,10 @@ export default function ComputerNetworks() {
     toast.success("Adresse email copiée dans le presse-papier");
   }
 
-
   return (
     <div className="flex items-center gap-x-5">
       {/* ToggleTheme */}
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <ToggleTheme />
-          </TooltipTrigger>
-          <TooltipContent>
-            <p className="text-sm">Changez le thème de l'application.</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+      <ToggleTheme />
 
       {/* Les réseaux sociaux */}
       {socialLinks.map((link) => (
@@ -42,7 +32,9 @@ export default function ComputerNetworks() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link href={link.href}>
-                <h3 className=" hover:text-primary hover:scale-110 duration-200">{link.icon}</h3>
+                <h3 className=" hover:text-primary hover:scale-110 duration-200">
+                  {link.icon}
+                </h3>
               </Link>
             </TooltipTrigger>
             <TooltipContent className="bg-primary">

@@ -6,7 +6,7 @@ export default function Skills() {
     <div className="container ">
       <h2 className="text-center clip mb-8">Compétences</h2>
 
-      <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-between">
+      <div className="flex flex-wrap gap-8 justify-between">
         {skillsList.map((skill) => (
           <SkillCard key={skill.id} skill={skill} />
         ))}
