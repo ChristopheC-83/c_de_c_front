@@ -2,6 +2,8 @@ import Spacing from "@/components/Spacing";
 import Title from "@/components/title/Title";
 import Hero from "./components/Hero";
 import Technos from "./components/Technos";
+import Prices from "./components/Prices";
+import Steps from "./components/Steps";
 
 export default function Services() {
   return (
@@ -13,6 +15,11 @@ export default function Services() {
       <Spacing />
       <Technos />
       <Spacing />
+      <Steps/>
+      <Spacing />
+      <Prices/>
+      <Spacing />
+
     </main>
   );
 }
