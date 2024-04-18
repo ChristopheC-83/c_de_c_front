@@ -1,7 +1,7 @@
 
 
 
- export default function OneShare({params} : Props) {
+ export default function OneShare({ params }: { params: { slug: string } }) {
 
 const {slug} = params;
 
