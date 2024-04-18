@@ -27,3 +27,13 @@ export type PortfolioType = {
   more: JSX.Element;
   
 }
+
+export type ToolsType = {
+  id: number;
+  title : string;
+  icon: JSX.Element;
+  colorItem: string;
+  bg: string;
+  pitch: string;
+  text: JSX.Element;
+};

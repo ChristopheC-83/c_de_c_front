@@ -37,7 +37,7 @@ export const socialLinks: SocialLinksType[] = [
     toolTipText: "Mes expériences sur CodePen.",
   },
   {
-    id: 4,
+    id: 5,
     label: "YouTube",
     href: "https://www.youtube.com/channel/UC4UbjJ99yO0SyDg4n-uWr1A",
     icon: <FaYoutube />,

@@ -2,7 +2,9 @@ import Spacing from "@/components/Spacing";
 import Hero from "@/components/homeComponents/hero/Hero";
 import Skills from "@/components/homeComponents/skills/Skills";
 import Title from "@/components/title/Title";
+import Tools from "@/components/homeComponents/tools/Tools";
 import Portfolio from "@/components/homeComponents/portfolio/Portfolio";
+
 
 export default function Home() {
   return (
@@ -34,13 +36,15 @@ export default function Home() {
         </div>
       </div> */}
       <Spacing />
-      <Title subtitle="Christophe Chiappetta" />
+      <Title title="Compagnon de code" subtitle="Christophe Chiappetta" />
       <Spacing />
       <Hero />
       <Spacing />
       <Skills />
       <Spacing />
       <Portfolio />
+      <Spacing />
+      <Tools/>
     </main>
   );
 }

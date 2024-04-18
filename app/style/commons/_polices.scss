@@ -22,6 +22,12 @@ h4 {
   font-weight: bold;
   font-family: "Labrada";
 }
+h5 {
+  font-size: clamp(16px, calc(12px + 0.4vw), 18px);
+  letter-spacing: calc(0.8px + 0.01vw);
+  font-weight: bold;
+  font-family: "Labrada";
+}
 p {
   font-size: clamp(16px, calc(12px + 0.4vw), 18px);
   line-height: clamp(20px, calc(20px + 1vw), 33px);
