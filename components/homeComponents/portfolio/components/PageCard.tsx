@@ -15,18 +15,18 @@ type PageCardProps = {
 
 export default function PageCard({ page }: PageCardProps) {
   return (
-    <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3 lg:px-1">
+    <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3 lg:px-1 cursor-grab">
       {/* image pour mobile */}
       <Link
         href={page.link}
-        className="w-fit lg:hidden h-fit m-4 rounded-lg overflow-hidden border-2 border-ring shrink-0 mx-auto"
+        className="w-fit lg:hidden h-fit m-4 rounded-lg overflow-hidden border-2 border-ring shrink-0 mx-auto "
       >
         <Image
           src={page.imageMobile}
           alt={page.title}
           width={450}
           height={300}
-          className=""
+          className="cursor-pointer"
         />
       </Link>
       {/* image pour pc */}
@@ -39,6 +39,7 @@ export default function PageCard({ page }: PageCardProps) {
           alt={page.title}
           width={200}
           height={600}
+          className="cursor-pointer"
         />
       </Link>
 

@@ -1,6 +1,11 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/shadcn/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/shadcn/sheet";
 import { Menu } from "lucide-react";
 import { navLinks } from "@/lib/navlinks";
 
@@ -25,11 +30,13 @@ export default function MenuSmartphone() {
             <ToggleTheme />
           </div>
           {navLinks.map((link) => (
-            <Link key={link.id} href={link.href}>
-              <h4 className=" hover:text-muted-foreground text-end">
-                {link.label}
-              </h4>
-            </Link>
+            <SheetClose key={link.id} asChild>
+              <Link href={link.href}>
+                <h4 className=" hover:text-muted-foreground text-end ">
+                  {link.label}
+                </h4>
+              </Link>
+            </SheetClose>
           ))}
         </div>
 
