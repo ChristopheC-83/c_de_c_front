@@ -43,3 +43,9 @@ export type ToolsType = {
   pitch: string;
   text: JSX.Element;
 };
+export type PriceListType = {
+  id: number;
+  price: string;
+  label: string;
+  text: JSX.Element;
+};
