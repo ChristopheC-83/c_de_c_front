@@ -19,10 +19,9 @@ export default function Hero() {
         <h2 className="text-center clip mb-8">
           Pour une solution qui vous ressemble.
         </h2>
-        <div className="flex flex-col items-start w-fit">
-          <p className="w-fit">Nous resterons dans le domaine du dev web ...</p>
-          <p className="w-fit">mais pas forcément que du code !</p>
-        </div>
+          <p >Nous resterons dans le domaine du dev web ...</p>
+          <p >mais pas forcément que du code !</p>
+   
         <p className="text-end">
           Insatiable, je me lance dans l'aventure des vidéos tuto
         </p>
