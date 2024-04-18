@@ -50,7 +50,7 @@ export const WarantyList: StepsListType[] = [
       <>
         En fonction de la demande, je vous propose un devis pour les mises à jour.
         <br />
-        Familier avec le code, le projet, la prosposition sera adaptée. Nous ne repartons pas de zéro
+        Familier avec le code, le projet, la proposition sera adaptée. Nous ne repartons pas de zéro.
         <br />
       </>
     ),

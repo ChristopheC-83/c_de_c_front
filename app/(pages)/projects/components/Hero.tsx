@@ -36,6 +36,9 @@ export default function Hero() {
         <p className="text-end">
           Amusons nous avec un deck de personnages de jeu de rôle !
         </p>
+        <p className="text-end">
+          Allons coder ensemble !
+        </p>
       </div>
     </div>
   );
