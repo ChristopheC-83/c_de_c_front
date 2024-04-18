@@ -19,8 +19,7 @@ export default function Hero() {
         <h2 className="text-center clip mb-8">
           Chaque projet correspond à un niveau !
         </h2>
-        <div className="flex flex-col items-start w-fit">
-          <p className="w-fit">
+          <p >
             En suivant un ligne directrice autour d'un projet donné, mettons en
             application votre apprentissage.
           </p>
@@ -29,7 +28,6 @@ export default function Hero() {
             Je ne suis là qu'en renfort pour vous aider à mettre en pratique ce
             que vous aurez appris à leur coté !
           </p>
-        </div>
         <p className="text-end">
           A travers les principales technos à disposition du développement web,{" "}
         </p>
