@@ -17,7 +17,7 @@ import { SiMysql } from "react-icons/si";
 export const portfolioList: PortfolioType[] = [
   {
     id: 1,
-    title: "Vélo Expresso",
+    title: "Vélo-Expresso",
     imageDestop: "/images/portfolio/portrait_velo_expresso-min.png",
     imageMobile: "/images/portfolio/paysage_velo_expresso-min.png",
     description: "Site vitrine administrable pour un magasin de vélos.",
@@ -141,7 +141,7 @@ export const portfolioList: PortfolioType[] = [
         Parce que c'est à travers des projets perso qu'on apprend le plus lors
         de notre formation, j'ai réalisé un site de présentation pour m'exercer
         à la manimulation de <b>React</b>.<br />
-        Pas un CV des plus sérieux, mais un site qui me ressemble.<br/>J'ai utilisé
+        Pas un CV des plus sérieux, mais un site qui me ressemble !<br/>J'ai utilisé
         ce <b>framework</b> pour le dynamisme et <b>SASS</b> pour le design.
         <br /> 
         La <b>librairie GSAP</b> est vraiment complète animer un projet web.

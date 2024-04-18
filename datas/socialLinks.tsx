@@ -36,11 +36,11 @@ export const socialLinks: SocialLinksType[] = [
     icon: <IoLogoCodepen />,
     toolTipText: "Mes expériences sur CodePen.",
   },
-  // {
-  //   id: 5,
-  //   label: "YouTube",
-  //   href: "https://www.youtube.com/channel/UC4UbjJ99yO0SyDg4n-uWr1A",
-  //   icon: <FaYoutube />,
-  //   toolTipText: "Mes vidéos explicatives d'accompagnement.",
-  // },
+  {
+    id: 5,
+    label: "YouTube",
+    href: "https://www.youtube.com/channel/UC4UbjJ99yO0SyDg4n-uWr1A",
+    icon: <FaYoutube />,
+    toolTipText: "Mes vidéos explicatives d'accompagnement.",
+  },
 ];

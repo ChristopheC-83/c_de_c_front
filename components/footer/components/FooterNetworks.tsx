@@ -1,4 +1,4 @@
-import { socialLinks } from "@/lib/socialLinks";
+import { socialLinks } from "@/datas/socialLinks";
 import Link from "next/link";
 
 export default function FooterNetworks() {

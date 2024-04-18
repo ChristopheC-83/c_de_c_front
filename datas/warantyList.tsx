@@ -82,4 +82,17 @@ export const WarantyList: StepsListType[] = [
       </>
     ),
   },
+  {
+    id: 6,
+    label: "J'ai besoin de toi sur site pendant plusieurs jours.",
+    text: (
+      <>
+        En restant dans ma zone de chalandise, je peux me déplacer avec plaisir.<br />
+        Entre Nîmes et Montpellier et de Arles à Alès je suis à votre disposition.<br />
+        Soit pour faire un point de vive voix sur votre projet,<br />
+        soit pour travailler sur place, potentiellement auprès de votre équipe.<br />
+        A l'heure du télétravail, un peu de relation humaine ne fera de mal à personne !<br />
+      </>
+    ),
+  },
 ];

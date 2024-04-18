@@ -7,10 +7,10 @@ import {
   SheetTrigger,
 } from "@/components/shadcn/sheet";
 import { Menu } from "lucide-react";
-import { navLinks } from "@/lib/navlinks";
+import { navLinks } from "@/datas/navlinks";
 
 import Link from "next/link";
-import { socialLinks } from "@/lib/socialLinks";
+import { socialLinks } from "@/datas/socialLinks";
 import { ImMail4 } from "react-icons/im";
 import ToggleTheme from "./ToggleTheme";
 

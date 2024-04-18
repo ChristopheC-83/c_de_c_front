@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/shadcn/tooltip";
-import { socialLinks } from "@/lib/socialLinks";
+import { socialLinks } from "@/datas/socialLinks";
 import Link from "next/link";
 import { ImMail4 } from "react-icons/im";
 import { toast } from "sonner";

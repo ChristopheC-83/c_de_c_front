@@ -1,4 +1,4 @@
-import { navLinks } from "@/lib/navlinks";
+import { navLinks } from "@/datas/navlinks";
 import Link from "next/link";
 
 export default function ComputerLinks() {
