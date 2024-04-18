@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/shadcn/carousel";
 import ToolCard from "./components/ToolCard";
+import ToolDetails from "./components/ToolDetails";
 
 export default function Tools() {
   return (
@@ -32,6 +33,7 @@ export default function Tools() {
         <CarouselPrevious variant="arrow" />
         <CarouselNext variant="arrow" />
       </Carousel>
+      <ToolDetails />
     </div>
   );
 }
