@@ -11,12 +11,12 @@ export default function Hero() {
           alt="christophe c."
           width={250}
           height={250}
-          className="rounded-full object-contain border-2 border-ring bg-gradient-to-bl from-teal-400 to-indigo-300 shadow mt-7"
+          className="rounded-full object-contain border-2 border-ring bg-gradient-to-bl from-teal-400 to-indigo-300 shadow mt-7 customShadow"
         />
       </div>
 
       <div
-        className="w-full md:w-3/4 mx-auto h-fit border-2 border-ring p-2 xs:p-3 sm:p-4 flex flex-col gap-y-4 rounded-lg bg-card text-card-foreground"
+        className="w-full md:w-3/4 mx-auto h-fit border-2 border-ring p-2 xs:p-3 sm:p-4 flex flex-col gap-y-4 rounded-lg bg-card text-card-foreground customShadow"
       >
         <h2 className="text-center clip mb-8">
           Pour une solution qui vous ressemble.
