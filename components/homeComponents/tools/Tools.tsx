@@ -24,7 +24,7 @@ export default function Tools() {
           {toolsList.map((tool) => (
             <CarouselItem
               key={tool.id}
-              className="basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 midflex "
+              className="basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 midflex ml-1 mb-4"
             >
               <ToolCard tool={tool}  />
             </CarouselItem>

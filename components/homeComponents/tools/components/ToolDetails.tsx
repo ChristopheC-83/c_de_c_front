@@ -12,7 +12,7 @@ export default function ToolDetails() {
   );
 
   return (
-    <div className="flex flex-col w-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4">
+    <div className="flex flex-col w-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow">
       <div className="flex justify-between items-center w-full mb-2 sm:mb-3  md:mb-4">
         <h3 className="text-primary">{tool?.title.toUpperCase()}</h3>
         <div className="text-primary text-4xl xs:text-5xl sm:text-6xl md:text-7xl">{tool?.icon}</div>

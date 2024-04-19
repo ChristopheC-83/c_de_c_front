@@ -21,7 +21,7 @@ export default function Portfolio() {
       >
         <CarouselContent>
           {portfolioList.map((page) => (
-            <CarouselItem key={page.id}>
+            <CarouselItem key={page.id} className="p-4 ml-1">
               <PageCard page={page} />
             </CarouselItem>
           ))}
