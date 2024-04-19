@@ -1,6 +1,7 @@
 import Spacing from "@/components/Spacing";
 import Title from "@/components/title/Title";
 import Hero from "./components/Hero";
+import Filter from "./components/Filter";
 
 export default function Projects() {
   return (
@@ -9,6 +10,8 @@ export default function Projects() {
       <Title title="Compagnon de Code" subtitle="Allons coder ensemble !" />
       <Spacing />
       <Hero/>
+      <Spacing />
+      <Filter />
       <Spacing />
       
     </main>

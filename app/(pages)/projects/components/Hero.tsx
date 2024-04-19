@@ -5,7 +5,7 @@ import profil from "@/public/images/profil1.png";
 export default function Hero() {
   return (
     <div className="container flex flex-col md:flex-row-reverse justify-center sm:justify-between md:items-start sm:items-center gap-8">
-      <div className="flex sm:justify-start sm:items-start">
+      <div className="flex justify-center sm:justify-start sm:items-start">
         <Image
           src={profil}
           alt="christophe c."
