@@ -1,5 +1,11 @@
 import { langagesToChoose } from "@/datas/projects/langagesToChose";
 import Image from "next/image";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/shadcn/tooltip";
 
 export default function Filter() {
   return (
@@ -15,12 +21,21 @@ export default function Filter() {
           >
             {/* <h4>{langage.name}</h4> */}
             <div className="size-14 xs:size-16 sm:size-20 xs:justify-around sm:justify-evenly bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow">
-              <Image
-                src={langage.logo}
-                alt={langage.name}
-                fill
-                className="object-contain "
-              />
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Image
+                      src={langage.logo}
+                      alt={langage.name}
+                      fill
+                      className="object-contain "
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-primary">
+                    <p className="text-sm text-popover ">{(langage.name).toUpperCase()}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
         ))}

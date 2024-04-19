@@ -32,7 +32,7 @@ export const langagesToChoose:LangageToChooseType[]= [
   },
   {
     id: 5,
-    name: "next",
+    name: "nextjs",
     logo: next,
     pitch: "Un framework pour les gouverner tous !",
   },

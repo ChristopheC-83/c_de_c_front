@@ -39,7 +39,7 @@ export default function ComputerNetworks() {
             </TooltipTrigger>
             <TooltipContent className="bg-primary">
               <p className="text-sm text-popover ">
-                {link.toolTipText ? link.toolTipText : link.label}
+                {link.label}
               </p>
             </TooltipContent>
           </Tooltip>
