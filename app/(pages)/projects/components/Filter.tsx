@@ -14,7 +14,7 @@ export default function Filter() {
             className="flexMid justify-between w-full px-2 "
           >
             {/* <h4>{langage.name}</h4> */}
-            <div className="size-14 xs:size-16 sm:size-20 xs:justify-around sm:justify-evenly bg-green-50 border border-primary rounded-full relative cursor-pointer ">
+            <div className="size-14 xs:size-16 sm:size-20 xs:justify-around sm:justify-evenly bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow">
               <Image
                 src={langage.logo}
                 alt={langage.name}
