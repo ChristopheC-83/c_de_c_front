@@ -5,6 +5,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "sonner";
 import ThemeProvider from "@/providers/theme-provider";
+import QueryProvider from "@/providers/query-provider";
 
 export const metadata: Metadata = {
   title: "CdeC | Accueil",
@@ -20,12 +21,14 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className="w-full min-h-screen flex flex-col bg-background ">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <Toaster position="top-center" richColors expand={true} />
-          <div className="flex-1">{children}</div>
-          <Footer />
-        </ThemeProvider>
+        <QueryProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Header />
+            <Toaster position="top-center" richColors expand={true} />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </ThemeProvider>
+        </QueryProvider>
       </body>
     </html>
   );

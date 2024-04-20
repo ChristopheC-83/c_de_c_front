@@ -21,7 +21,7 @@ export default function CardProject({ project }: CardProject) {
           />
         </div>
       </div>
-      <p className="w-full ">{project?.text}</p>
+      <p className="w-full ">{project?.pitch}</p>
     </div>
   );
 }

@@ -11,10 +11,20 @@ import {
 import { useState } from "react";
 import { allProjects } from "@/datas/projects/projects";
 import CardProject from "./cardProject";
+import { useArticles } from "@/hooks/useArticles";
 
 export default function Filter() {
   const [langage, setLangage] = useState("all");
   const [selectedProjects, setSelectedProjects] = useState(allProjects);
+
+  const {data: projects, isFetching, error} = useArticles();
+  const articles = projects?.articles;
+  const types = projects?.types
+
+  console.log(articles, types)
+
+
+
 
   function handleSelectedProjects(langage: string) {
 

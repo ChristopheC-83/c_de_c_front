@@ -12,21 +12,20 @@ export const allProjects: selectedProjectsType[] = [
     title: "Nos premières cartes en html / css",
     type: "html_css",
     icon: html_css,
-    text: (
+    pitch: (
       <>
         Un premier projet pour consolider les bases du html et du css. <br />
         Nous utiliserons ici flexbox sous plusieurs formes pour être à l'aise
         avec cet outil. <br />
       </>
     ),
-    img: "https://i.ytimg.com/an_webp/Cb9aj3ZrBnk/mqdefault_6s.webp?du=3000&sqp=CKD9jLEG&rs=AOn4CLAc6xtGO3GKQ4EyXg6AtKbCq_jqyg",
   },
   {
     id: 2,
     title: "Rendons notre projet responsive",
     type: "html_css",
     icon: html_css,
-    text: (
+    pitch: (
       <>
         Reprenons notre 1er projet pour le rendre responsive. <br />
       </>
@@ -37,7 +36,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Dynamisons notre projet",
     type: "javascript",
     icon: javascript,
-    text: (
+    pitch: (
       <>
         Un petit de JS et tout prend vie !<br />
       </>
@@ -48,7 +47,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Optimisons notre code avec un tableau et DRY",
     type: "javascript",
     icon: javascript,
-    text: (
+    pitch: (
       <>
         Qd nos données sont dans un tableau, bouclons dessus pour en ajouter à
         la volée facilement !<br />
@@ -60,7 +59,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Découpons notre code pour une meilleure lisibilité",
     type: "php",
     icon: php,
-    text: (
+    pitch: (
       <>
         Il n'est pas fait spécialement pour ça, mais php permet de commencer à
         structurer nos projets.
@@ -73,7 +72,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Gérons nos données avec php",
     type: "php",
     icon: php,
-    text: (
+    pitch: (
       <>
         Et le célèbre CRUD devient facile !<br />
       </>
@@ -84,7 +83,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Une architecture optimisée et scalable : le MVC",
     type: "php",
     icon: php,
-    text: (
+    pitch: (
       <>
         Un peu de poo pour beaucoup d'organisation !<br />
       </>
@@ -95,7 +94,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Des composants pour une application plus modulaire",
     type: "react",
     icon: react,
-    text: (
+    pitch: (
       <>
         Des données, une fonction map(), des composants, C'est facile !<br />
       </>
@@ -106,7 +105,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "UseState",
     type: "react",
     icon: react,
-    text: (
+    pitch: (
       <>
         Pour un application dynamique.
         <br />
@@ -118,7 +117,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "La cerise sur le gateau : le routing avec NextJs",
     type: "nextjs",
     icon: nextjs,
-    text: (
+    pitch: (
       <>
         Facile à mettre en place
         <br />
@@ -130,7 +129,7 @@ export const allProjects: selectedProjectsType[] = [
     title: "Prisma et supabase pour une gestion de données optimale",
     type: "nextjs",
     icon: nextjs,
-    text: (
+    pitch: (
       <>
         Pour une application fullstack
         <br />

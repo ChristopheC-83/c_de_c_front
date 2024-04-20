@@ -12,6 +12,6 @@ export type selectedProjectsType = {
   type : "all" | "html_css" | "javascript" | "php" | "react" | "nextjs";
   icon : string | StaticImageData;
   // logo?: string | StaticImageData;
-  text?: JSX.Element;
+  pitch?: JSX.Element;
   img?:string
 };

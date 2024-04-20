@@ -54,6 +54,8 @@
 <p>Les librairies utilisées autour de NextJs sont:</p>
 <ul>
     <li>Prisma, ORM de communication avec la DB en mySQL</li>
+    <li>React Query pour gagner en efficacité</li>
+    <li>Axios qui simplifie un peu le fetch</li>
     <li>React Icons pour la grande bibliothèque d'icones proposée.</li>
     <li>ShadCn/UI pour le design.</li>
     <li></li>
