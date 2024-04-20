@@ -11,9 +11,8 @@ export type selectedProjectsType = {
   visible: number;
   title: string;
   position : number;
-  type : "all" | "html_css" | "javascript" | "php" | "react" | "nextjs";
-  // icon : string | StaticImageData;
-  // logo?: string | StaticImageData;
+  // type : "all" | "html_css" | "javascript" | "php" | "react" | "nextjs";
+  type: string;
   pitch?:string
   text?: JSX.Element;
 };

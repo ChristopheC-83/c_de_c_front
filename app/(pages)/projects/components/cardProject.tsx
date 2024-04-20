@@ -12,12 +12,14 @@ type CardProject = {
 };
 
 export default function CardProject({ project }: CardProject) {
+
+  // on fait un tableau pour que Image de nextjs puisse fonctionner
   const projectImages = {
-    html_css: html_css,
-    javascript: javascript,
-    php: php,
-    react: react,
-    nextjs: nextjs,
+    html_css,
+    javascript,
+    php,
+    react,
+    nextjs,
   };
 
   return (
