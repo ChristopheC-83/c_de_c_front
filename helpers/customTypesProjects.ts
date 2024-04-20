@@ -8,10 +8,12 @@ export type LangageToChooseType = {
 };
 export type selectedProjectsType = {
   id: number;
+  visible: number;
   title: string;
+  position : number;
   type : "all" | "html_css" | "javascript" | "php" | "react" | "nextjs";
-  icon : string | StaticImageData;
+  // icon : string | StaticImageData;
   // logo?: string | StaticImageData;
-  pitch?: JSX.Element;
-  img?:string
+  pitch?:string
+  text?: JSX.Element;
 };

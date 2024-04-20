@@ -9,35 +9,28 @@ import {
   TooltipTrigger,
 } from "@/components/shadcn/tooltip";
 import { useState } from "react";
-import { allProjects } from "@/datas/projects/projects";
+// import { allProjects } from "@/datas/projects/projects";
 import CardProject from "./cardProject";
 import { useArticles } from "@/hooks/useArticles";
+import Loader from "@/app/loading";
+import ErrorPage from "@/app/not-found";
+import { selectedProjectsType } from "@/helpers/customTypesProjects";
 
 export default function Filter() {
+
+  // on récupère les articles de la DB
+  const { data: projects, isFetching, error } = useArticles();
+  const articles: selectedProjectsType[] = projects?.articles;
+  // nous avons les langaes en dur dans le fichier langagesToChose.ts
   const [langage, setLangage] = useState("all");
-  const [selectedProjects, setSelectedProjects] = useState(allProjects);
 
-  const {data: projects, isFetching, error} = useArticles();
-  const articles = projects?.articles;
-  const types = projects?.types
-
-  console.log(articles, types)
-
-
-
-
+  // on change le langage en fonction du choix de l'utilisateur
   function handleSelectedProjects(langage: string) {
-
-    if (langage === "all") {
-      setLangage("all");
-      setSelectedProjects(allProjects);
-      return 
-    }
-    setLangage(langage)
-    setSelectedProjects(
-      allProjects.filter((project) => project.type === langage)
-    );
+    setLangage(langage);
   }
+
+  if (isFetching) return <Loader />;
+  if (error) return <ErrorPage />;
 
   return (
     <div className="container">
@@ -45,13 +38,13 @@ export default function Filter() {
         Choisis ton langage :
       </h2>
       <div className="flex flex-wrap justify-between md:justify-around lg:justify-evenly w-full gap-4">
+        {/* Affichage des différents langages */}
         {langagesToChoose.map((langage) => (
           <div
             key={langage.id}
             className="flexMid justify-between px-2 "
             onClick={() => handleSelectedProjects(langage.name)}
           >
-            {/* <h4>{langage.name}</h4> */}
             <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto">
               <TooltipProvider>
                 <Tooltip>
@@ -74,13 +67,26 @@ export default function Filter() {
           </div>
         ))}
       </div>
+
+      {/* affichage des projets en fonction des choix de l'utilisateur */}
       <div className="mt-8">
         <h2 className="text-center clip mb-8 w-fit mx-auto">
-         {langage === "all" ? "Tous les projets !" : `Projets en ${langage.toUpperCase()}`}
+          {langage === "all"
+            ? "Tous les projets !!!"
+            : `Projets en ${langage.toUpperCase()}`}
         </h2>
-        {selectedProjects.map((project) => (
-          <CardProject key={project.id} project={project} />
-        ))}
+
+        {langage === "all"
+          ? articles &&
+            articles.map((project) => (
+              <CardProject key={project.id} project={project} />
+            ))
+          : articles &&
+            articles
+              .filter((article: { type: string }) => article.type === langage)
+              .map((project) => (
+                <CardProject key={project.id} project={project} />
+              ))}
       </div>
     </div>
   );
