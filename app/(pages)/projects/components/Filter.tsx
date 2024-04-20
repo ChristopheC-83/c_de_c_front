@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { langagesToChoose } from "@/datas/projects/langagesToChose";
 import Image from "next/image";
@@ -10,16 +10,23 @@ import {
 } from "@/components/shadcn/tooltip";
 import { useState } from "react";
 import { allProjects } from "@/datas/projects/projects";
+import CardProject from "./cardProject";
 
 export default function Filter() {
-
+  const [langage, setLangage] = useState("all");
   const [selectedProjects, setSelectedProjects] = useState(allProjects);
 
   function handleSelectedProjects(langage: string) {
+
     if (langage === "all") {
-      return setSelectedProjects(allProjects);
+      setLangage("all");
+      setSelectedProjects(allProjects);
+      return 
     }
-    setSelectedProjects(allProjects.filter((project) => project.type === langage));
+    setLangage(langage)
+    setSelectedProjects(
+      allProjects.filter((project) => project.type === langage)
+    );
   }
 
   return (
@@ -32,7 +39,7 @@ export default function Filter() {
           <div
             key={langage.id}
             className="flexMid justify-between px-2 "
-            onClick={()=>handleSelectedProjects(langage.name)}
+            onClick={() => handleSelectedProjects(langage.name)}
           >
             {/* <h4>{langage.name}</h4> */}
             <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto">
@@ -47,7 +54,9 @@ export default function Filter() {
                     />
                   </TooltipTrigger>
                   <TooltipContent className="bg-primary">
-                    <p className="text-sm text-popover ">{(langage.name).toUpperCase()}</p>
+                    <p className="text-sm text-popover ">
+                      {langage.name.toUpperCase()}
+                    </p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -56,10 +65,12 @@ export default function Filter() {
         ))}
       </div>
       <div className="mt-8">
-        <p>Tu vas regarder les projets suivants  : </p>
-          {selectedProjects.map((project) => (
-            <div key={project.id}>{project.title}</div>
-          ))}
+        <h2 className="text-center clip mb-8 w-fit mx-auto">
+         {langage === "all" ? "Tous les projets !" : `Projets en ${langage.toUpperCase()}`}
+        </h2>
+        {selectedProjects.map((project) => (
+          <CardProject key={project.id} project={project} />
+        ))}
       </div>
     </div>
   );
