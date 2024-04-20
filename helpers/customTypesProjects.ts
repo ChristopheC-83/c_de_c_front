@@ -6,3 +6,11 @@ export type LangageToChooseType = {
   logo: string | StaticImageData;
   pitch: string;
 };
+export type selectedProjectsType = {
+  id: number;
+  title: string;
+  type : "all" | "html_css" | "javascript" | "php" | "react" | "nextjs";
+  logo?: string | StaticImageData;
+  text?: JSX.Element;
+  img?:string
+};

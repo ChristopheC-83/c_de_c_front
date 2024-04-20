@@ -4,11 +4,18 @@ import javascript from "@/public/images/projects/logos/javascript.png";
 import php from "@/public/images/projects/logos/php.png";
 import react from "@/public/images/projects/logos/react.png";
 import next from "@/public/images/projects/logos/next.png";
+import all from "@/public/images/projects/logos/all.png";
 
 export const langagesToChoose:LangageToChooseType[]= [
   {
+    id: 0,
+    name: "all",
+    logo: all,
+    pitch: "Tous les projets à portée de mains !.",
+  },
+  {
     id: 1,
-    name: "html-css",
+    name: "html_css",
     logo: html_css,
     pitch: "Les langages de base du web. Du contenu et de la mise en forme.",
   },
