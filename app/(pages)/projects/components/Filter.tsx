@@ -9,7 +9,6 @@ import {
   TooltipTrigger,
 } from "@/components/shadcn/tooltip";
 import { useState } from "react";
-// import { allProjects } from "@/datas/projects/projects";
 import CardProject from "./cardProject";
 import { useArticles } from "@/hooks/useArticles";
 import Loader from "@/app/loading";
@@ -17,12 +16,14 @@ import ErrorPage from "@/app/not-found";
 import { selectedProjectsType } from "@/helpers/customTypesProjects";
 
 export default function Filter() {
-
   // on récupère les articles de la DB
   const { data: projects, isFetching, error } = useArticles();
   const articles: selectedProjectsType[] = projects?.articles;
-  // nous avons les langaes en dur dans le fichier langagesToChose.ts
+
+  // nous avons les langages en dur dans le fichier langagesToChose.ts
   const [langage, setLangage] = useState("all");
+
+  // console.log(articles);
 
   // on change le langage en fonction du choix de l'utilisateur
   function handleSelectedProjects(langage: string) {
