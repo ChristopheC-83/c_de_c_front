@@ -24,13 +24,13 @@ export default function OneProject({ params }: { params: { id: number } }) {
 
   return (
     <div className="container">
-      <div className="flex flex-col w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3 lg:px-1 cursor-grab customShadow mb-5 xs:mb-8 sm:mb-10 md:mb-12">
+      <div className="flex flex-col w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3 lg:px-1 customShadow mb-5 xs:mb-8 sm:mb-10 md:mb-120">
         <h2 className="text-center clip mb-8 w-fit mx-auto">
           {article?.title}
         </h2>
         <p className="p-2 sm:p-3 md:p-4">{article.pitch}</p>
       </div>
-      <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3 lg:px-1 cursor-grab customShadow">
+      <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-1 customShadow">
 
       {article?.text && (
             <div
@@ -41,6 +41,8 @@ export default function OneProject({ params }: { params: { id: number } }) {
         {/* <p>{article?.text}</p> */}
         {/* <p>{he.decode(article?.text)}</p> */}
       </div>
+
+      {/* <img style="display: block; margin-left: auto; margin-right: auto;" src="https://mycloud.barpat.fun/public/assets/Images/Bibliotheque/perso_rpg/magicien_glace.jpg" alt="Magicien de glace" width="350" height="350"></img> */}
     </div>
   );
 }
