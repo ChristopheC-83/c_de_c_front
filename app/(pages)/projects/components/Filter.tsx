@@ -23,7 +23,6 @@ export default function Filter() {
     selectedProjectsType[]
   >(projects?.articles || []);
 
-  console.log("articlesSelected", articlesSelected);
 
   // nous avons les langages en dur dans le fichier langagesToChose.ts
   const [langage, setLangage] = useState("all");
@@ -77,7 +76,6 @@ export default function Filter() {
     );
 
   }
-
 
   if (isFetching) return <Loader />;
   if (error) return <ErrorPage />;
