@@ -46,3 +46,4 @@ export default function OneProject({ params }: { params: { id: number } }) {
     </div>
   );
 }
+
