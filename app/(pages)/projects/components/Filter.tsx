@@ -77,7 +77,7 @@ export default function Filter() {
             : `Projets en ${langage.toUpperCase()}`}
         </h2>
 
-        {langage === "all"
+        {/* {langage === "all"
           ? articles &&
             articles.map((project) => (
               <CardProject key={project.id} project={project} />
@@ -87,7 +87,7 @@ export default function Filter() {
               .filter((article: { type: string }) => article.type === langage)
               .map((project) => (
                 <CardProject key={project.id} project={project} />
-              ))}
+              ))} */}
       </div>
     </div>
   );
