@@ -1,6 +1,7 @@
 import Spacing from "@/components/Spacing";
 import Title from "@/components/title/Title";
 import Hero from "./components/Hero";
+import Filter from "./components/Filter";
 
 export default function Share() {
   return (
@@ -9,6 +10,8 @@ export default function Share() {
       <Title title="Mes partages de trucs et astuces" subtitle="Des vidéos ? du code ? ... ou autre !" />
       <Spacing />
       <Hero />
+      <Spacing />
+      <Filter/>
       <Spacing />
     </main>
   );

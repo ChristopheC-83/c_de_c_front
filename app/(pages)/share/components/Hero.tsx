@@ -17,18 +17,17 @@ export default function Hero() {
 
     <div className="w-full md:w-3/4 mx-auto h-fit border-2 border-ring p-2 xs:p-3 sm:p-4 flex flex-col gap-y-4 rounded-lg bg-card text-card-foreground customShadow">
         <h2 className="text-center clip mb-8">
-          Pour une solution qui vous ressemble.
+          Réflexion sur code, et le reste !
         </h2>
-          <p >Nous resterons dans le domaine du dev web ...</p>
-          <p >mais pas forcément que du code !</p>
+          <p >Quelques tips de développeur ?</p>
+          <p >Quelques astuces qui m'ont bien aidé ?</p>
    
         <p className="text-end">
-          Insatiable, je me lance dans l'aventure des vidéos tuto
+          Des vidéos non liées à un langage
         </p>
         <p className="text-end">
-          tout en continuant mon apprentissage sans fin du développement,{" "}
+          et put-être même pas devant un IDE !?!
         </p>
-        <p className="text-end">voyons où ça nous mène !!!</p>
       </div>
     </div>
   );
