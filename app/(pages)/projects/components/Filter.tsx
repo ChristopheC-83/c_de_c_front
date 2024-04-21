@@ -19,6 +19,11 @@ export default function Filter() {
   // on récupère les articles de la DB
   const { data: projects, isFetching, error } = useArticles();
   const articles: selectedProjectsType[] = projects?.articles;
+  const [articlesSelected, setArticlesSelected] = useState<
+    selectedProjectsType[]
+  >(projects?.articles || []);
+
+  console.log("articlesSelected", articlesSelected);
 
   // nous avons les langages en dur dans le fichier langagesToChose.ts
   const [langage, setLangage] = useState("all");
@@ -28,10 +33,57 @@ export default function Filter() {
   // on change le langage en fonction du choix de l'utilisateur
   function handleSelectedProjects(langage: string) {
     setLangage(langage);
+    if (langage === "all") {
+      setArticlesSelected(projects?.articles);
+      return;
+    }
+    const articlesChoosen = projects?.articles.filter(
+      (article: selectedProjectsType) => article.type === langage
+    );
+    setArticlesSelected(articlesChoosen);
+    return;
   }
+
+  let result;
+
+  if (articlesSelected.length == 0 && langage != "all") {
+    result = (
+      <>
+        <p className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl text-center text-primary mt-4 sm:mt-6 md:mt-8">
+          Pas de projet pour le moment
+        </p>
+        <p className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl text-center text-primary">
+          Mais ça va venir 😉
+        </p>
+      </>
+    );
+  }
+  if (articlesSelected.length == 0 && langage === "all") {
+    result = (
+      <div>
+        {articles?.map((project) => (
+          <CardProject key={project.id} project={project} />
+        ))}
+      </div>
+    );
+  }
+  if (articlesSelected.length > 0) {
+    result = (
+      <div>
+        {articlesSelected.map((project) => (
+          <CardProject key={project.id} project={project} />
+        ))}
+      </div>
+    );
+
+  }
+
 
   if (isFetching) return <Loader />;
   if (error) return <ErrorPage />;
+  // choix du retour sous les langages
+
+
 
   return (
     <div className="container">
@@ -70,25 +122,7 @@ export default function Filter() {
       </div>
 
       {/* affichage des projets en fonction des choix de l'utilisateur */}
-      <div className="mt-8">
-        <h2 className="text-center clip mb-8 w-fit mx-auto">
-          {langage === "all"
-            ? "Tous les projets !!!"
-            : `Projets en ${langage.toUpperCase()}`}
-        </h2>
-
-        {/* {langage === "all"
-          ? articles &&
-            articles.map((project) => (
-              <CardProject key={project.id} project={project} />
-            ))
-          : articles &&
-            articles
-              .filter((article: { type: string }) => article.type === langage)
-              .map((project) => (
-                <CardProject key={project.id} project={project} />
-              ))} */}
-      </div>
+      {result}
     </div>
   );
 }
