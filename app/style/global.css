@@ -93,8 +93,9 @@
 
 {
   width: 80vw;
-  height:auto;
+  height:45vw;
   max-width: 600px;
+  max-height:337px;
   margin: 0 auto;
 }
 code, pre {
