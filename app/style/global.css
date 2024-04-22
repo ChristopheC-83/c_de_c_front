@@ -89,7 +89,8 @@
 
 .standard-img,
 .standart-video,
-.standart-media
+.standart-media,
+iframe
 
 {
   width: 80vw;
