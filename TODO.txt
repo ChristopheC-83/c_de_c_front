@@ -25,3 +25,9 @@ addeventlistener et classlist
 1 - des composants et mapper un tableau d'objets pour créer les personnages
 2 - changer des valeurs en temps réel avec props 
 3 - 
+
+
+
+* pour ce site
+sur les 3 cadres de prix, faire un bouton "en savoir plus"
+donc 3 pages expliquant les prestations possibles, les détails...

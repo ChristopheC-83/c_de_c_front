@@ -7,12 +7,12 @@ import react from "@/public/images/projects/logos/react.png";
 import nextjs from "@/public/images/projects/logos/next.png";
 import Link from "next/link";
 
+import he from "he";
 type CardProject = {
   project: selectedProjectsType;
 };
 
 export default function CardProject({ project }: CardProject) {
-  // on fait un tableau pour que Image de nextjs puisse fonctionner
   const projectImages = {
     html_css,
     javascript,
@@ -37,7 +37,7 @@ export default function CardProject({ project }: CardProject) {
           />
         </div>
       </div>
-      <p className="w-full ">{project?.pitch}</p>
+      <p className="w-full ">{project.pitch && he.decode(project.pitch)}</p>
     </Link>
   );
 }

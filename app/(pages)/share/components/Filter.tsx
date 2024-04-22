@@ -8,11 +8,8 @@ import ErrorPage from "@/app/not-found";
 import { selectedProjectsType } from "@/helpers/customTypesProjects";
 
 export default function Filter() {
-  // on récupère les articles de la DB
   const { data: shares, isFetching, error } = useShares();
   const articles: selectedProjectsType[] = shares?.articles;
-
-  // console.log(shares?.articles);
 
   if (isFetching) return <Loader />;
   if (error) return <ErrorPage />;

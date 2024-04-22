@@ -1,5 +1,6 @@
 import { selectedProjectsType } from "@/helpers/customTypesProjects";
 import Link from "next/link";
+import he from "he";
 
 type CardProject = {
   share: selectedProjectsType;
@@ -16,7 +17,7 @@ export default function CardProject({ share }: CardProject) {
         <h3 className="text-primary flex-1">{share?.title.toUpperCase()}</h3>
        
       </div>
-      <p className="w-full ">{share?.pitch}</p>
+      <p className="w-full ">{share.pitch && he.decode(share.pitch)}</p>
     </Link>
   );
 }
