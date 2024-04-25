@@ -1,4 +1,5 @@
 import { PriceListType } from "@/helpers/customTypes";
+import Link from "next/link";
 
 type PricesCardProps = {
   price: PriceListType;
@@ -15,6 +16,10 @@ export default function PricesCard({ price }: PricesCardProps) {
         <h3 className="clip text-center mt-8">{price.price}</h3>
         <h4 className="clip text-center mb-8">{price.price2}</h4>
       </div>
+
+    <Link href={price.link} className="mb-3 bg-clip w-fit p-3 mx-auto rounded-lg customShadow cursor-pointer "><h4>En savoir +</h4>
+    </Link>
+
     </div>
   );
 }

@@ -37,4 +37,37 @@ p {
   font-size: clamp(14px, 12px + 0.4vw, 18px);
   line-height: clamp(26px, 22px + 0.6vw, 32px);
   font-family: "Roboto";
+}
+
+.flexMid,
+.miflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-clip {
+  background: linear-gradient(235deg, #4ade80 0%, #3b82f6 100%);
+}
+
+.clip {
+  width: fit-content;
+  background: linear-gradient(235deg, #4ade80 0%, #3b82f6 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.customShadow {
+  box-shadow: 0px 5px 8px 2px rgba(3, 119, 80, 0.75);
+}
+
+.standard-img,
+.standart-video,
+.standart-media,
+iframe {
+  width: 80vw;
+  height: 45vw;
+  max-width: 600px;
+  max-height: 337px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

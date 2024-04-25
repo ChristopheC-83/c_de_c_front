@@ -49,4 +49,5 @@ export type PriceListType = {
   price2?: string;
   label: string;
   text: JSX.Element;
+  link:string;
 };

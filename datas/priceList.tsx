@@ -19,6 +19,7 @@ export const priceList: PriceListType[] = [
         <br />
       </>
     ),
+    link:"/learn-more/static-site",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const priceList: PriceListType[] = [
         <b>Restez à jour !</b>
       </>
     ),
+    link:"/learn-more/dynamic-site",
   },
   {
     id: 3,
@@ -55,5 +57,6 @@ export const priceList: PriceListType[] = [
         Contactez-moi pour une étude de votre projet !<br />
       </>
     ),
+    link:"/learn-more/remake-site",
   },
 ];
