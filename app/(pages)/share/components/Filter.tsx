@@ -17,7 +17,7 @@ export default function Filter() {
   return (
     <div className="container">
       <h2 className="text-center clip mb-8 w-fit mx-auto">
-        Les dernières pensées...
+        Mes dernières pensées...
       </h2>
       {articles?.map((share) => (
         <CardProject key={share.id} share={share} />

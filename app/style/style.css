@@ -10,6 +10,7 @@ h2 {
   letter-spacing: calc(1px + 0.04vw);
   font-weight: bold;
   font-family: "Labrada";
+  margin: 0 auto;
 }
 
 h3 {

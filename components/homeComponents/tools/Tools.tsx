@@ -12,7 +12,7 @@ import ToolDetails from "./components/ToolDetails";
 export default function Tools() {
   return (
     <div className="container ">
-      <h2 className="text-center clip mb-8">Les Outils</h2>
+      <h2 className="text-center clip mb-8 mx-auto">Les Outils</h2>
       <Carousel
         className="w-full "
         opts={{
