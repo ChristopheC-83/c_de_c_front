@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <CommonHero profilSrc={profil.src}>
       {
-        <div className="dark:text-primary">
+        <>
           <h2 className="text-clip  mb-8">
             Montrez-vous sous votre meilleur jour !
           </h2>
@@ -26,10 +26,10 @@ export default function Hero() {
           </p>
           <br />
 
-          <p className="w-fit">Ici, pas de site pré-fabriqué !</p>
-          <p className="w-fit">Un site unique conçu avec soin.</p>
-          <p className="w-fit"><b><u>Un site à votre image.</u></b></p>
-        </div>
+          <p className="text-end">Ici, pas de site pré-fabriqué !</p>
+          <p className="text-end">Un site unique conçu avec soin.</p>
+          <h3 className="text-center mb-4"><u>Un site à votre image.</u></h3>
+        </>
       }
     </CommonHero>
   );
