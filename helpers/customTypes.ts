@@ -13,7 +13,7 @@ export type SkillsListType = {
   id: number;
   icon: JSX.Element;
   label: string;
-  text: string;
+  text: JSX.Element;
 };
 export type StepsListType = {
   id: number;

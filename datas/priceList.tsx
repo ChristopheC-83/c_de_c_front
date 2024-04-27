@@ -24,7 +24,7 @@ export const priceList: PriceListType[] = [
   {
     id: 2,
     price: "A partir de 2500 € HT",
-    price2: "puis fonction de la taille du projet.",
+    price2: "puis fonction de la taille.",
     label: "Un projet administrable pour le gérer.",
     text: (
       <>
