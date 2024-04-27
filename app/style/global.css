@@ -40,7 +40,7 @@
 
   .dark {
     --background: 160 49% 3%;
-    --foreground: 160 20% 99%;
+    --foreground: 138 76% 97%;
     --muted: 280 40% 11%;
     --muted-foreground: 280 1% 69%;
     --popover: 160 49% 0%;
@@ -49,7 +49,8 @@
     --card-foreground: 160 20% 99%;
     --border: 160 15% 15%;
     --input: 160 15% 15%;
-    --primary: 160 99% 47%;
+    --primary: 138 76% 97%;
+    /* --primary: 160 99% 47%; */
     --primary-foreground: 160 99% 7%;
     --secondary: 280 99% 47%;
     --secondary-foreground: 0 0% 100%;

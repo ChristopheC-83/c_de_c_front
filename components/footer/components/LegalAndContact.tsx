@@ -9,7 +9,7 @@ export default function LegalAndContact() {
         <u>Contact :</u>
       </h4>
       <a href="mailto:christophe.chiapetta@gmail.com">
-        <h5>christophe.chiapetta@gmail.com</h5>
+        <h5>christophe.chiappetta@gmail.com</h5>
       </a>
 
       <h5 className="mt-12">
