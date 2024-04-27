@@ -12,7 +12,7 @@ import {
 
 return (
     <div className="container ">
-      <h2 className="text-center clip mb-8">FAQ et Garantie</h2>
+      <h2 className="text-clip  mb-8">FAQ et Garantie</h2>
       <Accordion
         type="single"
         collapsible

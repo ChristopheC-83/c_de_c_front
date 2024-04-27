@@ -11,7 +11,7 @@ import {
 export default function Portfolio() {
   return (
     <div className="container">
-      <h2 className="text-center clip mb-8 w-fit mx-auto">Porfolio</h2>
+      <h2 className="text-clip  mb-8 w-fit mx-auto">Porfolio</h2>
       <Carousel
         className="w-full "
         opts={{

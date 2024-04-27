@@ -13,8 +13,8 @@ export default function PricesCard({ price }: PricesCardProps) {
       <p>{price.text}</p>
 
       <div>
-        <h3 className="clip text-center mt-8">{price.price}</h3>
-        <h4 className="clip text-center mb-8">{price.price2}</h4>
+        <h3 className="text-clip  text-center mt-8">{price.price}</h3>
+        <h4 className="text-clip  text-center mb-8">{price.price2}</h4>
       </div>
 
     <Link href={price.link} className="mb-3 bg-clip w-fit p-3 mx-auto rounded-lg customShadow cursor-pointer "><h4>En savoir +</h4>

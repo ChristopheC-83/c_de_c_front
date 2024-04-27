@@ -85,7 +85,7 @@ export default function Filter() {
 
   return (
     <div className="container">
-      <h2 className="text-center clip mb-8 w-fit mx-auto">
+      <h2 className="text-clip  mb-8 w-fit mx-auto">
         Choisis ton langage :
       </h2>
       <div className="flex flex-wrap justify-between md:justify-around lg:justify-evenly w-full gap-4">

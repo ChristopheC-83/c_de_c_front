@@ -51,7 +51,7 @@ p {
   background: linear-gradient(235deg, #4ade80 0%, #3b82f6 100%);
 }
 
-.clip {
+.text-clip {
   width: fit-content;
   background: linear-gradient(235deg, #4ade80 0%, #3b82f6 100%);
   background-clip: text;

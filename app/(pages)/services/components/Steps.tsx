@@ -10,7 +10,7 @@ import {
 export default function Steps() {
   return (
     <div className="container ">
-      <h2 className="text-center clip mb-8">Déroulé et fonctionnement.</h2>
+      <h2 className="text-clip  mb-8">Déroulé et fonctionnement.</h2>
 
       <Accordion
         type="single"

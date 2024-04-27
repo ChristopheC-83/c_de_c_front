@@ -16,7 +16,7 @@ export default function Filter() {
 
   return (
     <div className="container">
-      <h2 className="text-center clip mb-8 w-fit mx-auto">
+      <h2 className="text-clip  mb-8 w-fit mx-auto">
         Mes dernières pensées...
       </h2>
       {articles?.map((share) => (

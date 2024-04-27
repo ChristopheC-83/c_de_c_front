@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function LegalAndContact() {
   return (
     <div className="w-full p-4">
-      <h3 className="clip hidden sm:block">Compagnon de Code</h3>
+      <h3 className="text-clip  hidden sm:block">Compagnon de Code</h3>
 
       <h4 className="mt-0 sm:mt-12 mb-2">
         <u>Contact :</u>

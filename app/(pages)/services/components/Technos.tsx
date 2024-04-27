@@ -9,7 +9,7 @@ import TechnoCard from "./TechnosCard";
 
 return (
     <div className="container ">
-      <h2 className="text-center clip mb-8">Des technologies qui ont fait leurs preuves !</h2>
+      <h2 className="text-clip  mb-8">Des technologies qui ont fait leurs preuves !</h2>
 
       <div className="flex flex-col lg:flex-row gap-8 justify-between">
         {usedTechnosList.map((techno) => (

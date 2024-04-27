@@ -7,7 +7,7 @@ export default function Hero() {
     <CommonHero profilSrc={profil.src}>
       {
         <>
-          <h2 className="text-center clip mb-8">Développeur Web</h2>
+          <h2 className="text-clip  mb-8">Développeur Web</h2>
           <p>
             Je suis à la recherche de la meilleure solution aux problématiques
             rencontrées en embrassant avec enthousiasme de nouvelles
@@ -17,7 +17,7 @@ export default function Hero() {
           <p className="text-end">
             J'essaye d'apporter ma petite pierre dans le parcours des étudiants
             en tant que{" "}
-            <span className="clip text-nowrap	">Compagnon de Code</span>.
+            <span className="text-clip  text-nowrap	">Compagnon de Code</span>.
           </p>
         </>
       }

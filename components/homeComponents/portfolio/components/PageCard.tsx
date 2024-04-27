@@ -44,7 +44,7 @@ export default function PageCard({ page }: PageCardProps) {
       </Link>
 
       <div className="flex-1 flex flex-col justify-between p-2 sm:p-3 md:p-4">
-        <h2 className="text-center text-primary">{page.title}</h2>
+        <h2 className="text-primary">{page.title}</h2>
         <div>
           <h4 className="my-6 text-primary">
             <u>Description : </u>

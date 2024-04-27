@@ -20,7 +20,7 @@ export default function OneShare({ params }: { params: { id: number } }) {
     <div className="container">
       {/* totre et pitch sont obligatoires donc forcement présents */}
       <div className="flex flex-col w-full h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-3 lg:px-1 customShadow mb-5 xs:mb-8 sm:mb-10 md:mb-120">
-        <h2 className="text-center clip mb-8 w-fit mx-auto">{share?.title}</h2>
+        <h2 className="text-clip  mb-8 w-fit mx-auto">{share?.title}</h2>
         <p className="p-2 sm:p-3 md:p-4">{share?.pitch && he.decode(share.pitch)}</p>
       </div>
 
