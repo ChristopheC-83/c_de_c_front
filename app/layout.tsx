@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className="w-full min-h-screen flex flex-col bg-background ">
         <QueryProvider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <Header />
             <Toaster position="top-center" richColors expand={true} />
             <div className="flex-1">{children}</div>
