@@ -2,6 +2,7 @@ import Spacing from "@/components/Spacing";
 import Title from "@/components/title/Title";
 import Hero from "./components/Hero"
 import RoadMap from "./components/RoadMap";
+import Video from "./components/Video";
 
 export default function StaticSite() {
   return (
@@ -14,7 +15,7 @@ export default function StaticSite() {
       <Spacing />
       <Hero />
       <Spacing />
-      
+      <Video/>
       <Spacing />
       <RoadMap/>
       <Spacing />
