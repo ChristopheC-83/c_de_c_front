@@ -18,7 +18,7 @@ type CardProject = {
 };
 export default function CardProject({ share }: CardProject) {
   return (
-    <Card className=" overflow-hidden min-w-[280px] w-2/5 max-w-[350px]">
+    <Card className=" overflow-hidden min-w-[300px] w-2/5 max-w-[350px]">
       <CardHeader className="text-primary bg-background text-center">
         <CardTitle>{share?.title.toUpperCase()}</CardTitle>
       </CardHeader>

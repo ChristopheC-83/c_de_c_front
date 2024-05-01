@@ -59,7 +59,7 @@ export default function Filter() {
   }
   if (articlesSelected.length == 0 && langage === "all") {
     result = (
-      <div>
+      <div className="flex w-fit mx-auto flex-wrap gap-3 justify-center">
         {articles?.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
@@ -68,7 +68,7 @@ export default function Filter() {
   }
   if (articlesSelected.length > 0) {
     result = (
-      <div>
+      <div className="flex w-fit mx-auto flex-wrap gap-3 justify-center">
         {articlesSelected.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
@@ -96,7 +96,7 @@ export default function Filter() {
             className="flexMid justify-between px-2 "
             onClick={() => handleSelectedProjects(langage.name)}
           >
-            <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto">
+            <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto mb-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
