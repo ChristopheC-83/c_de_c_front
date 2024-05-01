@@ -33,15 +33,19 @@ export default function CardProject({ project }: CardProject) {
   return (
     <Card className=" overflow-hidden w-[300px] learnMore flex flex-col justify-between">
       <CardHeader className="text-primary bg-background text-center">
-        <CardTitle className="flex justify-between items-center w-full"><div className="grow text-start">{project?.title.toUpperCase()}</div>
-        <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto w-fit min-w-[60px]">
-          <Image
-            src={projectImages[project.type as keyof typeof projectImages]}
-            alt={project.type}
-            fill
-            className="object-contain "
-          />
-        </div></CardTitle>
+        <CardTitle className="flex justify-between items-center w-full h-[90px]">
+          <div className="grow text-start">
+            {project?.title.toUpperCase()}
+          </div>
+          <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto w-fit min-w-[60px]">
+            <Image
+              src={projectImages[project.type as keyof typeof projectImages]}
+              alt={project.type}
+              fill
+              className="object-contain "
+            />
+          </div>
+        </CardTitle>
       </CardHeader>
       <CardContent>
         {project?.thumbnail && (
@@ -50,21 +54,19 @@ export default function CardProject({ project }: CardProject) {
             alt={project?.title}
             width={300}
             height={200}
-            className="w-full my-2"
+            className="w-full my-0"
           />
         )}
 
-        <p>{project?.pitch && he.decode(project?.pitch)}</p>
+        <p className="h-[90px]">{project?.pitch && he.decode(project?.pitch)}</p>
       </CardContent>
-      <CardFooter className="text-primary bg-background text-center">
-        <Link href={`/projects/${project?.id}`} className="text-center mx-auto">
+      <CardFooter className="text-primary bg-background text-center pt-0">
+        <Link href={`/projects/${project?.id}`} className="text-center mx-auto my-0">
           <Button size="lg">
             <p className="text-2xl">En voir +</p>
           </Button>
         </Link>
       </CardFooter>
     </Card>
-
-  
   );
 }
