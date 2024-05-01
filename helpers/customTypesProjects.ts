@@ -15,4 +15,5 @@ export type selectedProjectsType = {
   type: string;
   pitch?:string
   text?: JSX.Element;
+  thumbnail?:String;
 };

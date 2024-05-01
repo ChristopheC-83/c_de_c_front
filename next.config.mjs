@@ -8,7 +8,7 @@ const nextConfig = {
         },
         {
           protocol: "https",  
-          hostname: "mycloud.barpat.fun/",  
+          hostname: "mycloud.barpat.fun",  
         },
       ],
     },
