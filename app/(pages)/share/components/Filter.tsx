@@ -19,9 +19,11 @@ export default function Filter() {
       <h2 className="text-clip  mb-8 w-fit mx-auto">
         Mes dernières pensées...
       </h2>
-      {articles?.map((share) => (
-        <CardProject key={share.id} share={share} />
-      ))}
+      <div className="flex w-fit mx-auto flex-wrap gap-3 justify-center">
+        {articles?.map((share) => (
+          <CardProject key={share.id} share={share} />
+        ))}
+      </div>
     </div>
   );
 }
