@@ -19,7 +19,7 @@ export default function PricesCard({ price }: PricesCardProps) {
 
         <Link
           href={price.link}
-          className="mb-3 bg-clip w-fit p-3 mx-auto rounded-lg customShadow cursor-pointer "
+          className="mb-3 bg-clip w-fit p-3 mx-auto rounded-lg cursor-pointer learnMore"
         >
           <h4>En savoir +</h4>
         </Link>

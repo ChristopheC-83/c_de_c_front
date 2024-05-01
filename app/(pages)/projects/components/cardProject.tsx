@@ -31,7 +31,7 @@ export default function CardProject({ project }: CardProject) {
   };
 
   return (
-    <Card className=" overflow-hidden w-[300px] ">
+    <Card className=" overflow-hidden w-[300px] learnMore flex flex-col justify-between">
       <CardHeader className="text-primary bg-background text-center">
         <CardTitle className="flex justify-between items-center w-full"><div className="grow text-start">{project?.title.toUpperCase()}</div>
         <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto w-fit min-w-[60px]">
