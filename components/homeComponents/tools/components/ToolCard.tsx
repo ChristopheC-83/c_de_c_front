@@ -28,7 +28,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
                 <u>{capitalize(tool.title)}</u>
               </h4>
             </div>
-            <h4 className="animate-pulse text-3xl bg-clip w-fit mx-auto my-4  p-2 rounded-full cursor-pointer">
+            <h4 className="animate-pulse text-3xl bg-clip w-fit mx-auto mt-6 mb-4  p-2 rounded-full cursor-pointer">
               <MdOutlineTouchApp />
             </h4>
           </div>

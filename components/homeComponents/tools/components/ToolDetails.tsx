@@ -13,12 +13,14 @@ export default function ToolDetails() {
 
   return (
     <div className="flex flex-col w-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow">
-      <div className="flex justify-between items-center w-full mb-2 sm:mb-3  md:mb-4">
+      <div className="flex justify-between items-center w-full mb-2 sm:mb-3  md:mb-4 sm:w-10/12 sm:mx-auto md:w-8/12">
         <h3 className="text-primary">{tool?.title.toUpperCase()}</h3>
         <div className="text-primary text-4xl xs:text-5xl sm:text-6xl md:text-7xl">{tool?.icon}</div>
       </div>
       <p className="w-full sm:w-10/12 sm:mx-auto md:w-8/12">{tool?.text}</p>
-      <p className="text-primary my-3"><u>En résumé :</u></p>
+      {/* <div className="w-full max-w-[900px] mx-auto"> */}
+        <p className="text-primary my-3 w-full sm:w-10/12 sm:mx-auto md:w-8/12"><u>En résumé :</u></p>
+      {/* </div> */}
       <h4 className="text-center mb-4">{tool?.pitch}</h4>
     </div>
   );
