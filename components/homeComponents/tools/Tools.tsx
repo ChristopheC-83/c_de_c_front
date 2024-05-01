@@ -30,8 +30,10 @@ export default function Tools() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious variant="arrow" />
-        <CarouselNext variant="arrow" />
+        <div className="animate-pulse">
+          <CarouselPrevious variant="arrow" />
+          <CarouselNext variant="arrow" />
+        </div>
       </Carousel>
       <ToolDetails />
     </div>

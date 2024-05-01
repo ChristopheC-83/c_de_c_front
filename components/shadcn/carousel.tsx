@@ -7,6 +7,8 @@ import useEmblaCarousel, {
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
+import { MdSwipeLeft } from "react-icons/md";
+import { MdSwipeRight } from "react-icons/md";
 
 
 import { cn } from "@/lib/utils"
@@ -209,7 +211,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-7 w-7 rounded-full",
+        "absolute  h-8 w-8 rounded-full",
         orientation === "horizontal"
           ? "left-1/2 top-[-40px] -translate-x-[156px] -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -219,7 +221,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <SlArrowLeft  className="h-5 w-5 pr-0.5" />
+      <MdSwipeLeft  className="h-6 w-6 pr-0.5" />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -238,7 +240,7 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-7 w-7 rounded-full",
+        "absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
           ?  "left-1/2 top-[-40px] translate-x-[130px] -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -248,7 +250,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <SlArrowRight  className="h-5 w-5 pl-0.5" />
+      <MdSwipeRight  className="h-6 w-6 pl-0.5" />
       <span className="sr-only">Next slide</span>
     </Button>
   )

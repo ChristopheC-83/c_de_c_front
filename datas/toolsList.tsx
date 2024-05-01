@@ -136,7 +136,7 @@ export const toolsList: ToolsType[] = [
     icon: <SiReact />,
     colorItem: "blue-500",
     bg: "neutral-50",
-    pitch: "La bibliothèque JavaScript pour créer des interfaces utilisateur.",
+    pitch: "La bibliothèque JavaScript de Facebook.",
     text: (
       <>
         {" "}
@@ -156,7 +156,7 @@ export const toolsList: ToolsType[] = [
     icon: <SiNextdotjs />,
     colorItem: "gray-500",
     bg: "neutral-50",
-    pitch: "Le framework React pour les applications web.",
+    pitch: "Le framework React pour les app web.",
     text: (
       <>
         {" "}
@@ -177,7 +177,7 @@ export const toolsList: ToolsType[] = [
     icon: <SiPhp />,
     colorItem: "indigo-500",
     bg: "neutral-50",
-    pitch: "Le langage de programmation côté serveur.",
+    pitch: "Le langage côté serveur.",
     text: (
       <>
         {" "}
@@ -229,12 +229,12 @@ export const toolsList: ToolsType[] = [
   },
   {
     id: 50,
-    title: "Les autres outils",
+    title: "ToolsBox",
     icon: <VscTools />,
     colorItem: "neural-800",
     bg: "neutral-50",
     pitch:
-      "Les outils pour un site complet sont infinis, en voici quelques uns.",
+      "Quelques outils de ma boîte.",
     text: (
       <>
         <b>Supabase, MongoDB et Firebase</b> pour des bases de données.

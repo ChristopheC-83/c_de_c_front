@@ -13,7 +13,7 @@ export default function Portfolio() {
     <div className="container">
       <h2 className="text-clip  mb-8 w-fit mx-auto">Porfolio</h2>
       <Carousel
-        className="w-full "
+        className="w-full"
         opts={{
           align: "start",
           loop: true,
@@ -26,8 +26,10 @@ export default function Portfolio() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious variant="arrow"/>
-        <CarouselNext variant="arrow"/>
+        <div className="animate-pulse">
+          <CarouselPrevious variant="arrow" />
+          <CarouselNext variant="arrow" />
+        </div>
       </Carousel>
     </div>
   );
