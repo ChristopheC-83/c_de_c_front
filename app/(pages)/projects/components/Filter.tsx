@@ -88,7 +88,7 @@ export default function Filter() {
       <h2 className="text-clip  mb-8 w-fit mx-auto">
         Choisis ton langage :
       </h2>
-      <div className="flex flex-wrap justify-between md:justify-around lg:justify-evenly w-full gap-4">
+      <div className="flex flex-wrap justify-between md:justify-around lg:justify-evenly w-full gap-4 mb-4 xs:mb-6 sm:mb-8 md:mb-10">
         {/* Affichage des différents langages */}
         {langagesToChoose.map((langage) => (
           <div
