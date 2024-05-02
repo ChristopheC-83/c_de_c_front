@@ -37,13 +37,15 @@ export default function CardProject({ project }: CardProject) {
           <div className="grow text-start">
             {project?.title.toUpperCase()}
           </div>
-          <div className="size-14  sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full relative cursor-pointer customShadow mx-auto w-fit min-w-[60px]">
-            <Image
-              src={projectImages[project.type as keyof typeof projectImages]}
-              alt={project.type}
-              fill
-              className="object-contain "
-            />
+          <div className="w-1/4 mr-3 midFlex">
+            <div className="size-14 sm:size-16 md:size-20 bg-green-50 border border-primary rounded-full aspect-square relative cursor-pointer customShadow mx-auto w-fit min-w-[60px] min-h-[60px]">
+              <Image
+                src={projectImages[project.type as keyof typeof projectImages]}
+                alt={project.type}
+                fill
+                className="object-contain aspect-square"
+              />
+            </div>
           </div>
         </CardTitle>
       </CardHeader>
@@ -58,7 +60,7 @@ export default function CardProject({ project }: CardProject) {
           />
         )}
 
-        <p className="h-[90px]">{project?.pitch && he.decode(project?.pitch)}</p>
+        <p className="h-[90px] mt-3">{project?.pitch && he.decode(project?.pitch)}</p>
       </CardContent>
       <CardFooter className="text-primary bg-background text-center pt-0">
         <Link href={`/projects/${project?.id}`} className="text-center mx-auto my-0">
