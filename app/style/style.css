@@ -99,3 +99,8 @@ iframe {
 .full-container .selected {
   color: black;
 }/*# sourceMappingURL=style.css.map */
+
+pre{
+  border-radius: 10px;
+  border : 2px solid rgba(3, 119, 80, 1)
+}

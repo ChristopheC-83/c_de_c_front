@@ -59,7 +59,7 @@ export default function Filter() {
   }
   if (articlesSelected.length == 0 && langage === "all") {
     result = (
-      <div className="flex w-fit mx-auto flex-wrap gap-3 justify-center">
+      <div className="flex w-fit mx-auto flex-wrap gap-5 justify-center">
         {articles?.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
@@ -68,7 +68,7 @@ export default function Filter() {
   }
   if (articlesSelected.length > 0) {
     result = (
-      <div className="flex w-fit mx-auto flex-wrap gap-4 justify-center">
+      <div className="flex w-fit mx-auto flex-wrap gap-5 justify-center">
         {articlesSelected.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
