@@ -14,7 +14,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
 
   function chooseTool(id: number) {
     setSelectedTool(id);
-    console.log("id", id);
+    // console.log("id", id);
   }
 
   return (
