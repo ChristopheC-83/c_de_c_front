@@ -75,8 +75,15 @@
   @apply w-full mx-auto max-w-7xl px-1 xs:px-2 sm:px-3 md:px-4 lg:px-5;
 }
 
+/* les elements p et strong dans les text sont écrits en primary */
+.bold_primary p strong{
+  @apply text-primary;
 
+}
 
+.bold_primary p a strong{
+  @apply text-secondary;
+}
 
 
 

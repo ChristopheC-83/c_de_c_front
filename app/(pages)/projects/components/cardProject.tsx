@@ -63,9 +63,9 @@ export default function CardProject({ project }: CardProject) {
         <p className="h-[90px] mt-3">{project?.pitch && he.decode(project?.pitch)}</p>
       </CardContent>
       <CardFooter className="text-primary bg-background text-center pt-0">
-        <Link href={`/projects/${project?.id}`} className="text-center mx-auto my-0">
+        <Link href={`/projects/${project?.id}`} className="text-center mx-auto my-3">
           <Button size="lg">
-            <p className="text-2xl">En voir +</p>
+            <p className="text-2xl">Article Complet</p>
           </Button>
         </Link>
       </CardFooter>

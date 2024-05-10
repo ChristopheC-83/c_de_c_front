@@ -62,9 +62,9 @@ export default function OneProject({ params }: { params: { id: number } }) {
         </div>
       </div>
       {article?.text && (
-        <div className="flex flex-col lg:flex-row w-full  h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-1 customShadow">
+        <div className="flex flex-col lg:flex-row w-full  h-full justify-center lg:justify-start border-2 border-ring rounded-lg bg-card text-card-foreground px-1 customShadow ">
           <div
-            className="p-4 mx-auto max-w-[900px]"
+            className="p-4 mx-auto max-w-[900px] bold_primary"
             dangerouslySetInnerHTML={{
               __html: he.decode(article.text.toString()),
             }}
