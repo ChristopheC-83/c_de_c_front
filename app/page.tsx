@@ -11,7 +11,7 @@ import Portfolio from "@/components/homeComponents/portfolio/Portfolio";
 export default function Home() {
   return (
     <main className="p-1 xs:p-2 sm:p-3 md:p-4">
-      <div className="w-full flex flex-col p-12 bg-white">
+      {/* <div className="w-full flex flex-col p-12 bg-white">
         <div className="flex gap-1 text-white">
           <div className="h-12 w-12       bg-popover">pop</div>
           <div className="h-12 w-12       bg-card">card</div>
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="h-12 w-12       bg-destructive-foreground">del</div>
           <div className="h-12 w-12       bg-ring">ring</div>
         </div>
-      </div>
+      </div> */}
       <Spacing />
       <Title title="Compagnon de code" subtitle="Christophe Chiappetta" />
       <Spacing />
