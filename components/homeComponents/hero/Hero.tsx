@@ -10,7 +10,8 @@ export default function Hero() {
           <h2 className="text-clip  mb-8">Développeur Web</h2>
           <p>
             Je suis à la recherche de la meilleure solution aux problématiques
-            rencontrées en utilisant la techno la plus efficace !
+            rencontrées en embrassant avec enthousiasme de nouvelles
+            technologies si nécessaire !
           </p>
           <p className="text-center text-2xl">&</p>
           <p className="text-end">
