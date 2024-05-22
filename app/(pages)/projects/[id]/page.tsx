@@ -10,7 +10,6 @@ import javascript from "@/public/images/projects/logos/javascript.png";
 import php from "@/public/images/projects/logos/php.png";
 import react from "@/public/images/projects/logos/react.png";
 import nextjs from "@/public/images/projects/logos/next.png";
-import { Button } from "@/components/shadcn/button";
 
 export default function OneProject({ params }: { params: { id: number } }) {
   const { id } = params;
