@@ -6,19 +6,20 @@ export const navLinks: NavlinksType[] = [
     href: "/",
     label: "accueil",
   },
+  //  A modifier et remettre plus tard si nécessaire
+  // {
+  //   id: 2,
+  //   href: "/services",
+  //   label: "services",
+  // },
   {
-    id: 2,
-    href: "/services",
-    label: "services",
+    id: 4,
+    href: "/projects",
+    label: "codons ensemble",
   },
   {
     id: 3,
     href: "/share",
     label: "partages",
-  },
-  {
-    id: 4,
-    href: "/projects",
-    label: "projets",
   },
 ];

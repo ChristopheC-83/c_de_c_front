@@ -7,17 +7,16 @@ export default function Hero() {
     <CommonHero profilSrc={profil.src}>
       {
         <>
-          <h2 className="text-clip  mb-8">Développeur Web</h2>
-          <p>
-            Je suis à la recherche de la meilleure solution aux problématiques
-            rencontrées en embrassant avec enthousiasme de nouvelles
-            technologies si nécessaire !
-          </p>
+          <h2 className="text-clip  mb-8">L'apprentissage du Dev Web :</h2>
+          <p> - Apprends grâce à des tutos et la documentation.</p>
+          <p> - Fais des projets accompagnés.</p>
+          <p className="text-clip">Le plus importants : </p>
+          <p> - Fais des projets perso !</p>
+          
           <p className="text-center text-2xl">&</p>
           <p className="text-end">
-            Je souhaite apporter ma petite pierre dans le parcours des étudiants
-            en tant que{" "}
-            <span className="text-clip  text-nowrap	">Compagnon de Code</span>.
+            En tant que {" "}
+            <span className="text-clip  text-nowrap	">Compagnon de Code</span>, je ferai mon possible pour être à tes côtés sur la seconde partie 😉.
           </p>
         </>
       }
