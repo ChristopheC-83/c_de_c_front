@@ -12,7 +12,7 @@ export default function Header() {
       {/* Menu si écran > 640px de large */}
       <div className="container md:flex justify-between p-6 hidden ">
         <ComputerLinks />
-        <ComputerNetworks />
+        {/* <ComputerNetworks /> */}
         
       </div>
     </header>
