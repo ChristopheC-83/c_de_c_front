@@ -11,7 +11,7 @@ export default function Hero() {
           <p> - Apprends grâce à des tutos et la documentation.</p>
           <p> - Fais des projets accompagnés.</p>
           <p className="text-clip">Le plus importants : </p>
-          <p> - Fais des projets personnels !</p>
+          <p> - Fais des projets personnels ! Challenge toi !</p>
           
           <p className="text-center text-2xl">&</p>
           <p className="text-end">

@@ -13,6 +13,7 @@ export default function Header() {
       <div className="container md:flex justify-between p-6 hidden ">
         <ComputerLinks />
         <ComputerNetworks />
+        
       </div>
     </header>
   );
