@@ -8,15 +8,15 @@ export default function Hero() {
       {
         <>
           <h2 className="text-clip  mb-8">L'apprentissage du Dev Web :</h2>
-          <p> - Apprends grâce à des tutos et la documentation.</p>
-          <p> - Fais des projets accompagnés.</p>
-          <p className="text-clip">Le plus importants : </p>
-          <p> - Fais des projets personnels ! Challenge toi !</p>
+          <p> - Apprends les bases grâce à des tutos et la documentation.</p>
+          <p> - Fais des projets accompagnés pour mettre en pratique.</p>
+          <p className="text-clip font-semibold">Le plus importants : </p>
+          <h3> - Fais des projets personnels ! Challenge toi !</h3>
           
           <p className="text-center text-2xl">&</p>
           <p className="text-end">
             En tant que {" "}
-            <span className="text-clip  text-nowrap	">Compagnon de Code</span>, je ferai mon possible pour être à tes côtés sur la seconde partie 😉.
+            <span className="text-clip  text-nowrap	font-semibold">Compagnon de Code</span>, je ferai mon possible pour être à tes côtés sur la seconde partie 😉.
           </p>
         </>
       }

@@ -18,45 +18,45 @@ import { LuNetwork } from "react-icons/lu";
 import { VscTools } from "react-icons/vsc";
 
 export const toolsList: ToolsType[] = [
+  // {
+  //   id: 1,
+  //   title: "html",
+  //   icon: <FaHtml5 />,
+  //   colorItem: "orange-600",
+  //   bg: "neutral-50",
+  //   pitch: "Le contenu de votre site, c'est lui !",
+  //   text: (
+  //     <>
+  //       {" "}
+  //       L'HTML (HyperText Markup Langage) n'est pas du code à proprement parler,
+  //       mais un langage de balisage qui permet de structurer le contenu d'une
+  //       page web. C'est lui qui permet de définir les différents éléments de
+  //       votre site : titres, paragraphes, images, liens, etc. C'est la base de
+  //       tout site web. C'est le document word de votre site à l'état brut.
+  //     </>
+  //   ),
+  // },
+  // {
+  //   id: 2,
+  //   title: "css",
+  //   icon: <FaCss3Alt />,
+  //   colorItem: `blue-700`,
+  //   bg: "neutral-50",
+  //   pitch: "La mise en forme de votre site.",
+  //   text: (
+  //     <>
+  //       {" "}
+  //       Le CSS (Cascading Style Sheets) est un langage utilisé pour décrire la
+  //       présentation d'un document écrit en HTML. Il permet de mettre en forme
+  //       les éléments de votre site : couleurs, polices, marges, alignements,
+  //       etc. C'est lui qui va donner du style à votre site, le rendre plus
+  //       attractif et plus agréable à lire. C'est la boîte de crayons ou de
+  //       feutres de votre site.
+  //     </>
+  //   ),
+  // },
   {
     id: 1,
-    title: "html",
-    icon: <FaHtml5 />,
-    colorItem: "orange-600",
-    bg: "neutral-50",
-    pitch: "Le contenu de votre site, c'est lui !",
-    text: (
-      <>
-        {" "}
-        L'HTML (HyperText Markup Langage) n'est pas du code à proprement parler,
-        mais un langage de balisage qui permet de structurer le contenu d'une
-        page web. C'est lui qui permet de définir les différents éléments de
-        votre site : titres, paragraphes, images, liens, etc. C'est la base de
-        tout site web. C'est le document word de votre site à l'état brut.
-      </>
-    ),
-  },
-  {
-    id: 2,
-    title: "css",
-    icon: <FaCss3Alt />,
-    colorItem: `blue-700`,
-    bg: "neutral-50",
-    pitch: "La mise en forme de votre site.",
-    text: (
-      <>
-        {" "}
-        Le CSS (Cascading Style Sheets) est un langage utilisé pour décrire la
-        présentation d'un document écrit en HTML. Il permet de mettre en forme
-        les éléments de votre site : couleurs, polices, marges, alignements,
-        etc. C'est lui qui va donner du style à votre site, le rendre plus
-        attractif et plus agréable à lire. C'est la boîte de crayons ou de
-        feutres de votre site.
-      </>
-    ),
-  },
-  {
-    id: 3,
     title: "sass",
     icon: <SiSass />,
     colorItem: "pink-400",
@@ -113,82 +113,82 @@ export const toolsList: ToolsType[] = [
       </>
     ),
   },
-  {
-    id: 15,
-    title: "javascript",
-    icon: <SiJavascript />,
-    colorItem: "yellow-400",
-    bg: "neutral-50",
-    pitch: "L'interactivité de votre site.",
-    text: (
-      <>
-        {" "}
-        Le JavaScript est un langage de programmation qui permet de rendre les
-        pages web interactives. Il permet de créer des effets visuels, des
-        animations, des jeux, des applications web, etc. C'est lui qui va rendre
-        votre site dynamique et réactif. C'est le peintre de votre site.
-      </>
-    ),
-  },
-  {
-    id: 16,
-    title: "react",
-    icon: <SiReact />,
-    colorItem: "blue-500",
-    bg: "neutral-50",
-    pitch: "La bibliothèque JavaScript de Facebook.",
-    text: (
-      <>
-        {" "}
-        React est une bibliothèque JavaScript qui permet de créer des interfaces
-        utilisateur interactives et dynamiques. Elle est utilisée pour
-        construire des applications web modernes, des sites web, des
-        applications mobiles, des jeux, etc. Elle permet de créer des composants
-        réutilisables et de les assembler pour former des interfaces complexes.
-        C'est un outil très puissant qui permet de créer des interfaces
-        utilisateur de haute qualité. C'est une magnifique boite de Lego !
-      </>
-    ),
-  },
-  {
-    id: 17,
-    title: "nextjs",
-    icon: <SiNextdotjs />,
-    colorItem: "gray-500",
-    bg: "neutral-50",
-    pitch: "Le framework React pour les app web.",
-    text: (
-      <>
-        {" "}
-        Next.js est un framework React qui permet de créer des applications web
-        modernes et performantes. Il offre de nombreuses fonctionnalités
-        avancées, comme le rendu côté serveur, le routage dynamique, la
-        génération de pages statiques, etc. Cela permet d'optimiser les
-        performances de votre site et d'améliorer l'expérience utilisateur.
-        C'est un outil très complet qui permet de créer des applications web de
-        haute qualité. C'est la boite de Lego avec éclairage et mécanismes
-        intégrés !
-      </>
-    ),
-  },
-  {
-    id: 20,
-    title: "php",
-    icon: <SiPhp />,
-    colorItem: "indigo-500",
-    bg: "neutral-50",
-    pitch: "Le langage côté serveur.",
-    text: (
-      <>
-        {" "}
-        PHP est un langage de programmation côté serveur qui est utilisé pour
-        créer des sites web dynamiques. Il permet de générer du contenu, de se
-        connecter à des bases de données, de gérer des sessions, des cookies,
-        etc. C'est un langage très populaire qui est utilisé par de nombreux
-        sites web. C'est l'architecte de votre site.
-      </>
-    ),
-  },
+  // {
+  //   id: 15,
+  //   title: "javascript",
+  //   icon: <SiJavascript />,
+  //   colorItem: "yellow-400",
+  //   bg: "neutral-50",
+  //   pitch: "L'interactivité de votre site.",
+  //   text: (
+  //     <>
+  //       {" "}
+  //       Le JavaScript est un langage de programmation qui permet de rendre les
+  //       pages web interactives. Il permet de créer des effets visuels, des
+  //       animations, des jeux, des applications web, etc. C'est lui qui va rendre
+  //       votre site dynamique et réactif. C'est le peintre de votre site.
+  //     </>
+  //   ),
+  // },
+  // {
+  //   id: 16,
+  //   title: "react",
+  //   icon: <SiReact />,
+  //   colorItem: "blue-500",
+  //   bg: "neutral-50",
+  //   pitch: "La bibliothèque JavaScript de Facebook.",
+  //   text: (
+  //     <>
+  //       {" "}
+  //       React est une bibliothèque JavaScript qui permet de créer des interfaces
+  //       utilisateur interactives et dynamiques. Elle est utilisée pour
+  //       construire des applications web modernes, des sites web, des
+  //       applications mobiles, des jeux, etc. Elle permet de créer des composants
+  //       réutilisables et de les assembler pour former des interfaces complexes.
+  //       C'est un outil très puissant qui permet de créer des interfaces
+  //       utilisateur de haute qualité. C'est une magnifique boite de Lego !
+  //     </>
+  //   ),
+  // },
+  // {
+  //   id: 17,
+  //   title: "nextjs",
+  //   icon: <SiNextdotjs />,
+  //   colorItem: "gray-500",
+  //   bg: "neutral-50",
+  //   pitch: "Le framework React pour les app web.",
+  //   text: (
+  //     <>
+  //       {" "}
+  //       Next.js est un framework React qui permet de créer des applications web
+  //       modernes et performantes. Il offre de nombreuses fonctionnalités
+  //       avancées, comme le rendu côté serveur, le routage dynamique, la
+  //       génération de pages statiques, etc. Cela permet d'optimiser les
+  //       performances de votre site et d'améliorer l'expérience utilisateur.
+  //       C'est un outil très complet qui permet de créer des applications web de
+  //       haute qualité. C'est la boite de Lego avec éclairage et mécanismes
+  //       intégrés !
+  //     </>
+  //   ),
+  // },
+  // {
+  //   id: 20,
+  //   title: "php",
+  //   icon: <SiPhp />,
+  //   colorItem: "indigo-500",
+  //   bg: "neutral-50",
+  //   pitch: "Le langage côté serveur.",
+  //   text: (
+  //     <>
+  //       {" "}
+  //       PHP est un langage de programmation côté serveur qui est utilisé pour
+  //       créer des sites web dynamiques. Il permet de générer du contenu, de se
+  //       connecter à des bases de données, de gérer des sessions, des cookies,
+  //       etc. C'est un langage très populaire qui est utilisé par de nombreux
+  //       sites web. C'est l'architecte de votre site.
+  //     </>
+  //   ),
+  // },
   {
     id: 22,
     title: "mvc",

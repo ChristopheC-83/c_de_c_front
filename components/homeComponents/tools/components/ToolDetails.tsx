@@ -17,11 +17,7 @@ export default function ToolDetails() {
         <h3 className="text-primary">{tool?.title.toUpperCase()}</h3>
         <div className="text-primary text-4xl xs:text-5xl sm:text-6xl md:text-7xl">{tool?.icon}</div>
       </div>
-      <p className="w-full sm:w-10/12 sm:mx-auto md:w-8/12">{tool?.text}</p>
-      {/* <div className="w-full max-w-[900px] mx-auto"> */}
-        <p className="text-primary my-3 w-full sm:w-10/12 sm:mx-auto md:w-8/12"><u>En résumé :</u></p>
-      {/* </div> */}
-      <h4 className="text-center mb-4">{tool?.pitch}</h4>
+      <p className="w-full sm:w-10/12 sm:mx-auto md:w-8/12 mb-5">{tool?.text}</p>
     </div>
   );
 }
