@@ -5,6 +5,7 @@ import php from "@/public/images/projects/logos/php.png";
 import react from "@/public/images/projects/logos/react.png";
 import next from "@/public/images/projects/logos/next.png";
 import all from "@/public/images/projects/logos/all.png";
+import tuto from "@/public/images/projects/logos/tuto.png";
 
 export const langagesToChoose:LangageToChooseType[]= [
   {
@@ -42,5 +43,11 @@ export const langagesToChoose:LangageToChooseType[]= [
     name: "nextjs",
     logo: next,
     pitch: "Un framework pour les gouverner tous !",
+  },
+  {
+    id: 6,
+    name: "tuto",
+    logo: tuto,
+    pitch: "Un point précis !",
   },
 ];

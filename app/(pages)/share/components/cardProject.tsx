@@ -33,8 +33,8 @@ export default function CardProject({ share }: CardProject) {
 
         <p>{share?.pitch && he.decode(share?.pitch)}</p>
       </CardContent>
-      <CardFooter className="text-primary bg-background text-center">
-        <Link href={`/share/${share?.id}`} className="text-center mx-auto" >
+      <CardFooter className="text-primary bg-background text-center ">
+        <Link href={`/share/${share?.id}`} className="text-center mx-auto mb-3" >
           <Button size="lg" ><p className="text-2xl">En voir +</p></Button>
         </Link>
       </CardFooter>
