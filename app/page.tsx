@@ -7,6 +7,7 @@ import Title from "@/components/title/Title";
 import Tools from "@/components/homeComponents/tools/Tools";
 import Portfolio from "@/components/homeComponents/portfolio/Portfolio";
 import Langages from "@/components/homeComponents/langages/Langages";
+import Recently from "@/components/homeComponents/recently/Recently";
 
 
 export default function Home() {
@@ -39,9 +40,11 @@ export default function Home() {
         </div>
       </div> */}
       <Spacing />
-      <Title title="Compagnon de Code" subtitle="Consolidons vos Connaissances" />
+      <Title title="Compagnon de Code" subtitle="Consolidez vos Connaissances !" />
       <Spacing />
       <Hero />
+      <Spacing />
+      <Recently/>
       <Spacing />
       <Langages/>
       {/* <Spacing />

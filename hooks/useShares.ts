@@ -7,4 +7,10 @@ export function useShares() {
       return data;
     });
   }
+export function useLastShare() {
+    return useQuery("share", async () => {
+      const { data } = await axios.get(`https://edit.barpat.fun/api_last_share`);
+      return data;
+    });
+  }
    

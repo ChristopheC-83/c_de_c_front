@@ -23,7 +23,6 @@ export default function Filter() {
     selectedProjectsType[]
   >(projects?.articles || []);
 
-
   // nous avons les langages en dur dans le fichier langagesToChose.ts
   const [langage, setLangage] = useState("all");
 
@@ -74,20 +73,15 @@ export default function Filter() {
         ))}
       </div>
     );
-
   }
 
   if (isFetching) return <Loader />;
   if (error) return <ErrorPage />;
   // choix du retour sous les langages
 
-
-
   return (
     <div className="container">
-      <h2 className="text-clip  mb-8 w-fit mx-auto">
-        Choisis ton langage :
-      </h2>
+      <h2 className="text-clip  mb-8 w-fit mx-auto">Choisis ton langage :</h2>
       <div className="flex flex-wrap justify-between md:justify-around lg:justify-evenly w-full gap-4 mb-4 xs:mb-6 sm:mb-8 md:mb-10">
         {/* Affichage des différents langages */}
         {langagesToChoose.map((langage) => (

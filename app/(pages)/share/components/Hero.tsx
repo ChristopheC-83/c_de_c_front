@@ -16,7 +16,7 @@ export default function Hero() {
           Des vidéos non liées à un langage
         </p>
         <p className="text-end">
-          et put-être même pas devant un IDE !?!
+          et peut-être même pas devant un IDE !?!
         </p>
         </>
       }

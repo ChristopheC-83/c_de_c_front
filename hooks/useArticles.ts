@@ -7,4 +7,10 @@ export function useArticles() {
       return data;
     });
   }
+export function useLastArticle() {
+    return useQuery("project", async () => {
+      const { data } = await axios.get(`https://edit.barpat.fun/api_last_article`);
+      return data;
+    });
+  }
    
