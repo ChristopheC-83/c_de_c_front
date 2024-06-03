@@ -17,7 +17,7 @@ export default function Hero() {
             A travers les principales technos à disposition du développement
             web,{" "}
           </p>
-          <p className="text-end">Des articles non liées à un langage</p>
+          <p className="text-end">Des articles non liés à un langage</p>
           <p className="text-end">et peut-être même pas devant un IDE !?!</p>
           <p className="ml-auto text-end text-clip font-semibold">
             Allons causer ensemble !
