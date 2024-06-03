@@ -3,16 +3,17 @@ import Title from "@/components/title/Title";
 import Hero from "./components/Hero";
 import Filter from "./components/Filter";
 
-export default function Share() {
+export default function Projects() {
   return (
     <main className="p-1 xs:p-2 sm:p-3 md:p-4">
       <Spacing />
-      <Title title="Mes partages de trucs et astuces" subtitle="Des vidéos ? du code ? ... ou autre !" />
+      <Title title="Compagnon de Code" subtitle="Codons un projet ensemble !" />
       <Spacing />
-      <Hero />
+      <Hero/>
       <Spacing />
-      <Filter/>
+      <Filter />
       <Spacing />
+      
     </main>
   );
 }

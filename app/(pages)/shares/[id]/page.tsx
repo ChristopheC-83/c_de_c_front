@@ -9,12 +9,13 @@ import javascript from "@/public/images/projects/logos/javascript.png";
 import php from "@/public/images/projects/logos/php.png";
 import react from "@/public/images/projects/logos/react.png";
 import nextjs from "@/public/images/projects/logos/next.png";
-import { useProjects } from "@/hooks/useApiProjects";
+import other from "@/public/images/projects/logos/tuto.png";
+import { useShares } from "@/hooks/useApiShares";
 
 export default function OneProject({ params }: { params: { id: number } }) {
   const { id } = params;
 
-  const { data: projects, isFetching, error } = useProjects();
+  const { data: projects, isFetching, error } = useShares();
   const articles: selectedProjectsType[] = projects?.articles;
   const article = articles?.filter(
     (article: { id: number }) => article.id == id
@@ -26,7 +27,7 @@ export default function OneProject({ params }: { params: { id: number } }) {
     javascript,
     php,
     react,
-    nextjs,
+    nextjs,other,
   };
   if (isFetching) return <Loader />;
   if (error) return <ErrorPage />;

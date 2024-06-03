@@ -13,13 +13,18 @@ export const navLinks: NavlinksType[] = [
   //   label: "services",
   // },
   {
-    id: 4,
+    id: 3,
     href: "/projects",
-    label: "codons ensemble",
+    label: "codons un projet",
   },
   {
-    id: 3,
-    href: "/share",
-    label: "partages",
+    id: 4,
+    href: "/tutos",
+    label: "creusons un sujet",
+  },
+  {
+    id: 5,
+    href: "/shares",
+    label: "causons un peu",
   },
 ];

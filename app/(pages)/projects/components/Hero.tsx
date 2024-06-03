@@ -24,11 +24,11 @@ export default function Hero() {
             web,{" "}
           </p>
           <p className="text-end">
-            Amusons nous avec un deck de personnages de jeu de rôle !
+            Commençons avec un deck de personnages de jeu de rôle !
           </p>
-          <p className="text-end">Allons coder ensemble !</p>
+          <p className="ml-auto text-end text-clip font-semibold">Allons coder ensemble !</p>
         </>
       }
-    </CommonHero>
+    </CommonHero> 
   );
 }

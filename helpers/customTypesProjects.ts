@@ -13,6 +13,7 @@ export type selectedProjectsType = {
   position : number;
   // type : "all" | "html_css" | "javascript" | "php" | "react" | "nextjs";
   type: string;
+  language: string;
   pitch?:string
   text?: JSX.Element;
   thumbnail?:String;

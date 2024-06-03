@@ -72,7 +72,7 @@ export default function CardProject({ project }: CardProject) {
       </CardContent>
       <CardFooter className="text-primary bg-background text-center pt-0">
         <Link
-          href={`/projects/${project?.id}`}
+          href={`/tutos/${project?.id}`}
           className="text-center mx-auto my-3"
         >
           <Button size="lg">

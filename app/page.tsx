@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </div> */}
       <Spacing />
-      <Title title="Compagnon de Code" subtitle="Consolidez vos Connaissances !" />
+      <Title title="Compagnon de Code" subtitle="Consolidez <wbr> vos Connaissances !" />
       <Spacing />
       <Hero />
       <Spacing />

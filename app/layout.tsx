@@ -10,7 +10,7 @@ import QueryProvider from "@/providers/query-provider";
 export const metadata: Metadata = {
   title: "CdeC | Accueil",
   description:
-    "Code avec moi pour mettre en pratique ton apprentissage des outils du développement web. ",
+    "Codons ensemble pour mettre en pratique ton apprentissage des outils du développement web. ",
 };
 
 export default function RootLayout({

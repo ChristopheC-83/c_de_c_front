@@ -13,11 +13,11 @@ import CardProject from "./cardProject";
 import Loader from "@/app/loading";
 import ErrorPage from "@/app/not-found";
 import { selectedProjectsType } from "@/helpers/customTypesProjects";
-import { useProjects } from "@/hooks/useApiProjects";
+import { useTutos } from "@/hooks/useApiTutos";
 
 export default function Filter() {
   // on récupère les articles de la DB
-  const { data: projects, isFetching, error } = useProjects();
+  const { data: projects, isFetching, error } = useTutos();
   const articles: selectedProjectsType[] = projects?.articles;
   const [articlesSelected, setArticlesSelected] = useState<
     selectedProjectsType[]
@@ -86,7 +86,6 @@ export default function Filter() {
       <div className="flex flex-wrap justify-between md:justify-around lg:justify-evenly w-full gap-4 mb-4 xs:mb-6 sm:mb-8 md:mb-10">
         {/* Affichage des différents langages */}
         {langagesToChoose
-        .filter((langage) => langage.name !== "other")
         .map((langage) => (
           <div
             key={langage.id}

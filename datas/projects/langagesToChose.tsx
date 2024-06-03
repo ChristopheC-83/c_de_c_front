@@ -5,7 +5,7 @@ import php from "@/public/images/projects/logos/php.png";
 import react from "@/public/images/projects/logos/react.png";
 import next from "@/public/images/projects/logos/next.png";
 import all from "@/public/images/projects/logos/all.png";
-import tuto from "@/public/images/projects/logos/tuto.png";
+import other from "@/public/images/projects/logos/tuto.png";
 
 export const langagesToChoose:LangageToChooseType[]= [
   {
@@ -46,8 +46,8 @@ export const langagesToChoose:LangageToChooseType[]= [
   },
   {
     id: 6,
-    name: "tuto",
-    logo: tuto,
+    name: "other",
+    logo: other,
     pitch: "Un point précis !",
   },
 ];
