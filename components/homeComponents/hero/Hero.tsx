@@ -16,8 +16,9 @@ export default function Hero() {
           <p className="text-center text-2xl">&</p>
           <p className="text-end">
             En tant que {" "}
-            <span className="text-clip  text-nowrap	font-semibold">Compagnon de Code</span>, je ferai mon possible pour être à tes côtés sur la seconde partie 😉.
+            <span className="text-clip  text-nowrap	font-semibold">Compagnon de Code</span>,
           </p>
+          <p className="text-end"> je ferai mon possible pour être à tes côtés sur la seconde partie 😉.</p>
         </>
       }
     </CommonHero>
