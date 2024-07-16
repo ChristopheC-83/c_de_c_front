@@ -7,8 +7,7 @@
     cours mais butaient un peu sur la mise en pratique.
 </p>
 <p>
-    Aussi, cet espace personnel, qui me permet de me présenter, de présenter
-    mes services, je souhaite développer des vidéos de "Code With Me", je
+    Aussi je souhaite développer des vidéos de "Code With Me", je
     serai le Compagnon de Code de ceux qui ont déjà suivi un cours mais
     souhaite plus mettre en pratique leur apprentissage.
 </p>
@@ -16,7 +15,7 @@
 <p>
     Nous avons déjà de très bons tutos/tuteurs pour ça (Jonathan alias
     Graphikart, Graven, Louis Nicolas de Believemy, Enzo de l'Ecole du Web,
-    AMtthieu Gaston de H2PROG...).
+    Matthieu Gaston de H2PROG...).
 </p>
 <p>
     La vidéo me semblant être le format le plus accessible, des vidéos
@@ -26,7 +25,7 @@
 
 <h2><u>Objectifs</u></h2>
 <ul>
-    <li>Présenter ma manière de traviller, les outils utilisés.</li>
+    <li>Présenter ma manière de travailler, les outils utilisés.</li>
     <li>Présenter les services que je peux proposer</li>
     <li>
     Tel un blog, mettre en avant des vidéos de codeur ou de développeur.
@@ -38,7 +37,7 @@
 <br />
 <h2><u>Le projet</u></h2>
 <p>Afin d'anticiper de futures MAJ, le Front et le Back sont séparés.</p>
-<p>Le Front est caodé en Nextjs14.</p>
+<p>Le Front est codé en Nextjs14.</p>
 <p>Le back en php / mvc.</p>
 
 <h2><u>Le Front</u></h2>
@@ -66,11 +65,13 @@
 <br />
 <h2><u>Le Back</u></h2>
 <p>Site d'administration, il gère la création du conenu type blog.</p>
-<p>Accessible seulement par l'admiisrtateur du site.</p>
+<p>Accessible seulement par l'admisrtateur du site.</p>
 <p>Donc aucune gestion utilisateur hormis la connexion.</p>
 
 <br />
 <h2><u>Les bases de données</u></h2>
 <p>
-    En MySQL, elles seront plusieurs afin de découper les responsabilités.
+    En MySQL,découpées en plusieurs tables les responsabilités.
 </p>
+
+<h4>A venir : remodelage en symfony et permettre à des utilisateurs de s'inscrire pour une potentielle interaction.</h4>

@@ -1,33 +1,4 @@
-* voir à réduire les espaces et la police à 14px sur mobile
+* un enregistrement / connexion
 
-
-
-
-
-* html/css : 
-1 - le site
-2 - appel à images extérieures (?)
-3 - responsive 
-
-* javascript :
-1 - les selecteurs
-addeventlistener et classlist
-2 - un tableau et un foreach pour créer les personnages
-3 - les 3 boites de dialogues et selection du personnage
-4 - poo et combat
-
-* php (à faire ?)
-1 - découper le code pour meilleure lecture
-2 - communiquer avec un db 
-3 - mettre en place un MVC
-
-* react
-1 - des composants et mapper un tableau d'objets pour créer les personnages
-2 - changer des valeurs en temps réel avec props 
-3 - 
-
-
-
-* pour ce site
-sur les 3 cadres de prix, faire un bouton "en savoir plus"
-donc 3 pages expliquant les prestations possibles, les détails...
+* possibilité de laisser un message sous les articles pour les personnes connectées.
+* messages visibles de toues et tous

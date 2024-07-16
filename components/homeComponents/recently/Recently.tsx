@@ -17,9 +17,9 @@ export default function Recently() {
   const { data: last_share } = useLastShare();
   const { data: last_tuto } = useLastTuto();
 
-  console.log(last_article);
-  console.log(last_share);
-  console.log(last_tuto);
+  // console.log(last_article);
+  // console.log(last_share);
+  // console.log(last_tuto);
 
   if (isFetching) return <Loader />;
   if (error) return <ErrorPage />;
