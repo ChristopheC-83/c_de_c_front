@@ -13,8 +13,12 @@ import Link from "next/link";
 import { socialLinks } from "@/datas/socialLinks";
 import { ImMail4 } from "react-icons/im";
 import ToggleTheme from "./ToggleTheme";
+import { useSession } from "next-auth/react";
+import ButtonSignOut from "@/components/commons/ButtonSignOut";
+import ButtonsProviders from "@/components/commons/ButtonsProvider";
 
 export default function MenuSmartphone() {
+  const { data: session } = useSession();
   return (
     <Sheet>
       <SheetTrigger>
@@ -38,6 +42,9 @@ export default function MenuSmartphone() {
               </Link>
             </SheetClose>
           ))}
+          {session ? <h4 className=" hover:text-muted-foreground text-end ">
+            <Link href="/profile/settings">profil</Link>
+                </h4> : <ButtonsProviders />}
         </div>
 
         <div className="w-full flex justify-between flex-wrap">

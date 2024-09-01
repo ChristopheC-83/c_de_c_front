@@ -3,6 +3,8 @@ import ComputerNetworks from "./components/ComputerNetworks";
 import MenuSmartphone from "./components/MenuSmartphone";
 
 export default function Header() {
+
+  
   return (
     <header>
       {/* Menu si écran < 640px de klarge */}

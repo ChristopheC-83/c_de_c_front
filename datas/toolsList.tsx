@@ -16,6 +16,8 @@ import { SiMysql } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { LuNetwork } from "react-icons/lu";
 import { VscTools } from "react-icons/vsc";
+import { IoLogoVercel } from "react-icons/io5";
+
 
 export const toolsList: ToolsType[] = [
   // {
@@ -224,6 +226,21 @@ export const toolsList: ToolsType[] = [
         données, ce qui permet de gagner du temps et de réduire les erreurs.
         C'est un outil très complet qui permet de gérer les données de votre
         application de manière efficace. C'est le magasinier de votre site.
+      </>
+    ),
+  },
+  {
+    id: 40,
+    title: "Vercel",
+    icon: <IoLogoVercel />,
+    colorItem: "neural-800",
+    bg: "neutral-50",
+    pitch:
+      "Idéal pour déployer vos applications Next.js.",
+    text: (
+      <>
+        <b>Vercel</b> est une solution d'hébergement qui permet de déployer des applications Next.js de manière simple et rapide. Il offre de nombreuses fonctionnalités avancées, comme le <b>déploiement automatique</b>, la mise en cache, la gestion des environnements, etc. <br /> Cela permet d'optimiser les performances de votre site et d'améliorer l'expérience utilisateur. <br />
+        Tu fais du NextJs, tu veux te simplifier la vie : <b>VERCEL</b> est ton ami !
       </>
     ),
   },

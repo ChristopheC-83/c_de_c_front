@@ -1,14 +1,14 @@
 
 
 
- export default function Login() {
+ export default function Favorites() {
 
 
 
 return (
     <div>
+Fav
 
-Login
 
     </div>
 
