@@ -21,7 +21,6 @@ export default async function Settings() {
 
  
 
-  
 
   return (
     <section className="border border-gray-200 rounded-md p-3 md:p-5">
@@ -29,9 +28,9 @@ export default async function Settings() {
       <p className="text-lg text-muted-foreground">Gérez vos paramètres</p>
       <div className="w-12 h-[1px] bg-white mt-3 mb-5 mx-1"></div>
 
-      <form action={updateUser}>
+      <form action={updateUser} >
       {/* <form action=""> */}
-        <input type="hidden" name="id" value={user?.id} />
+        <input type="hidden" name="id" value={user?.id ||""} />
         <Card>
           <CardHeader>
             <CardTitle>Vos Informations</CardTitle>
@@ -74,7 +73,7 @@ export default async function Settings() {
               />
             </div>
             <div className="space-y-1 mt-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">Email <span className="text-xs text-muted-foreground">(non modifiable)</span></Label>
               <Input
                 disabled
                 name="email"

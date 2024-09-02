@@ -35,12 +35,13 @@ export const updateUser = async (formData: FormData) => {
   } catch (error) {
     console.error("Error updating user:", error);
   } finally {
-    revalidatePath("/profile/settings?success=true");
+    revalidatePath("/");
   }
 };
 
 export const deleteUser = async () => {
-  const session = await getServerSession(authOptions);
+   // Récupérer la session coté serveur. Coté client on utilisera useSession
+   const session = await getServerSession(authOptions);
 
   const userId = session?.user.id as string;
 
