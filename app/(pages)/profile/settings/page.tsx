@@ -40,7 +40,7 @@ export default async function Settings() {
           </CardHeader>
           <CardContent>
             {user?.image && (
-              <div className="flexMid gap-4">
+              <div className="flexMid gap-4 md:gap-6">
                 <Image
                   src={user?.image}
                   alt={`${user?.name}`}
