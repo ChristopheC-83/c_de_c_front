@@ -37,6 +37,3 @@ yarn-error.log*
 next-env.d.ts
 git merge users
 
-
-dev.db
-*.db
