@@ -101,7 +101,7 @@ export default async function Settings() {
       </form>
         <form action={deleteUser}>
         <input type="hidden" name="id" value={user?.id} />
-        <Button className="bg-red-500 mx-2 mb-2 mt-4 hover:bg-red-600 text-white">
+        <Button className="bg-red-500 mx-1 mb-2 mt-4 hover:bg-red-600 text-white">
           Supprimer mon compte
         </Button>
       </form>
